@@ -1,0 +1,34 @@
+html {
+  background-color: #343a40;
+}
+
+/* width */
+body::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: #343a40;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #42f55d;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #64ffda;
+}
+
+.particles {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}

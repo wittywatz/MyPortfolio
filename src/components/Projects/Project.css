@@ -1,0 +1,197 @@
+.project-content {
+  display: flex;
+  flex-direction: column;
+  /* z-index: 5; */
+}
+
+.project-contents,
+.project-contents-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* height: */
+  /* padding-left: 9rem; */
+  /* overflow: scroll; */
+}
+.project-contents-2 :nth-child(1) {
+  order: 1;
+}
+.project-contents-2 :nth-child(2) {
+  order: 3;
+}
+.project-contents-2 :nth-child(3) {
+  order: 2;
+}
+.project-name {
+  align-self: center;
+  color: #42f55d;
+  padding-right: 20px;
+  width: 10%;
+}
+.project-link {
+  color: #42f55d;
+}
+
+.project-link:hover {
+  text-decoration: none;
+  color: #64ffda;
+}
+.main-project-content {
+  padding-top: 25px;
+  width: 35%;
+}
+.main-project-content-2 {
+  width: 50%;
+  border: 1px solid #64ffda;
+  box-shadow: 2px 5px 10px #64ffda;
+  display: flex;
+  /* flex-direction: column; */
+  /* overflow-y: scroll; */
+}
+.main-project-content-2 :nth-child(1) {
+  order: 1;
+}
+.main-project-content-2 :nth-child(2) {
+  order: 2;
+}
+.main-project-content-2 :nth-child(3) {
+  order: 3;
+}
+.main-project-content,
+.main-project-content-2 {
+  align-self: center;
+  justify-self: center;
+  /* width: 49%; */
+  height: 300px;
+}
+
+.project-briefing {
+  width: 92%;
+  border-right: 1px solid #64ffda;
+  /* margin: 0 10px; */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.project-briefing::-webkit-scrollbar {
+  width: 1px;
+  height: 0.2rem;
+}
+
+/* Track */
+.project-briefing::-webkit-scrollbar-track {
+  background: #343a40;
+}
+
+/* Handle */
+.project-briefing::-webkit-scrollbar-thumb {
+  background: #42f55d;
+}
+
+/* Handle on hover */
+.project-briefing::-webkit-scrollbar-thumb:hover {
+  background: #64ffda;
+}
+
+.project-titles,
+.project-github-link {
+  justify-self: center;
+  align-self: center;
+}
+
+ {
+  justify-self: center;
+  align-self: center;
+}
+.file-icon-click {
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.description ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 5px;
+}
+
+.description ul li::before {
+  content: '▹';
+  position: absolute;
+  left: 5px;
+  color: #64ffda;
+}
+.icon-before-content-2 {
+  display: none;
+}
+@media (max-width: 770px) {
+  .project-contents,
+  .project-contents-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-project-content-2 {
+    border: unset;
+    box-shadow: unset;
+  }
+  .project-contents-2 :nth-child(1) {
+    order: 1;
+  }
+  .project-contents-2 :nth-child(2) {
+    order: 2;
+  }
+  .project-contents-2 :nth-child(3) {
+    order: 3;
+  }
+  .main-project-content {
+    border-top: 1px solid #64ffda;
+  }
+  .main-project-content-2 {
+    border-bottom: 1px solid #64ffda;
+    flex-direction: column;
+  }
+  .project-name {
+    width: unset;
+  }
+  .main-project-content,
+  .main-project-content-2 {
+    width: 90%;
+    padding: 0px;
+    margin: 0;
+    height: 250px;
+    border-left: 1px solid #64ffda;
+    border-right: 1px solid #64ffda;
+  }
+
+  .project-titles {
+    display: none;
+  }
+  .project-briefing {
+    width: unset;
+    height: 92%;
+    border-right: unset;
+    border-bottom: 1px solid #64ffda;
+  }
+  .file-icon-click {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  .icon-before-content::before {
+    content: 'Code';
+    font-size: 1.2rem;
+  }
+  .icon-before-content-2 {
+    display: unset;
+  }
+  .icon-before-content-2::after {
+    content: 'Live';
+    font-size: 1.2rem;
+  }
+}
+
+/* .box :nth-child(1) { order: 2; }
+        .box :nth-child(2) { order: 3; }
+        .box :nth-child(3) { order: 1; }
+        .box :nth-child(4) { order: 3; }
+        .box :nth-child(5) { order: 1; } */

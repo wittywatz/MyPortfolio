@@ -1,0 +1,19 @@
+.footer-body {
+  display: flex;
+  flex-direction: column;
+  /* overflow: scroll; */
+}
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.icon-footer {
+  font-size: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+.icon-footer:hover {
+  color: #64ffda;
+  transform: scale(1.1);
+}
