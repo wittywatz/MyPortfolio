@@ -13,7 +13,7 @@ const Education = () => {
       course: 'Electrical and Electronics Engineering',
       degree: 'B.Eng ',
       school: 'Federal University Oye-Ekiti, Ekiti-State (FUOYE), Nigeria ',
-      grade: 'First Class Honors----- DO PROJECTS',
+      grade: 'First Class Honors',
       duration: 'January 2018',
     },
   ];
@@ -22,7 +22,7 @@ const Education = () => {
     <div className="pt-3">
       {education.map((edu, i) => {
         return (
-          <div key={i} className="education p-1 mb-4">
+          <div key={i} className="education p-1 m-4">
             <div className="degree-section">
               <h5>
                 <span style={{ color: '#42f55d' }}>{edu.degree}</span>
@@ -32,10 +32,12 @@ const Education = () => {
             </div>
 
             <h6>{edu.school}</h6>
-            <p>
-              <span style={{ color: '#42f55d' }}>Grade: </span>
-              {edu.grade}{' '}
-            </p>
+            {edu.grade && (
+              <p>
+                <span style={{ color: '#42f55d' }}>Grade: </span>
+                {edu.grade}{' '}
+              </p>
+            )}
           </div>
         );
       })}

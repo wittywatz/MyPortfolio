@@ -8,7 +8,7 @@ const Footer = () => {
     color: '#42f55d',
   };
   return (
-    <footer className="bg-dark text-center pt-4 text-white">
+    <footer className="bg-dark text-center pt-2 text-white">
       <div className="container">
         <div className="footer-body pt-2">
           <div className="footer-content" style={{ zIndex: '5' }}>

@@ -1,5 +1,6 @@
 import React from 'react';
 import homepage from '../images/homepage.png';
+import resume from '../../static/Resume.pdf';
 import './Navigation.css';
 
 const NavBar = () => {
@@ -58,27 +59,43 @@ const NavBar = () => {
           </ul>
           <ul className="navbar-nav ml-auto links-size">
             <li className="nav-profiles">
-              <a href="https://github.com/wittywatz">
+              <a
+                href="https://github.com/wittywatz"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-github iconn ml-4"></i>
               </a>
             </li>
             <li className="nav-profiles">
-              <a href="https://www.linkedin.com/in/watson-agbramu-a37320181/">
+              <a
+                href="https://www.linkedin.com/in/watson-agbramu-a37320181/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab ml-4 fa-linkedin-in  iconn "> </i>
               </a>
             </li>
             <li className="nav-profiles">
-              <a href="https://www.instagram.com/wittywatz">
+              <a
+                href="https://www.instagram.com/wittywatz"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab ml-4 fa-instagram  iconn "></i>
               </a>
             </li>
             <li className="nav-profiles">
-              <a href="mailto:watsonagbramu@gmail.com">
+              <a
+                href="mailto:watsonagbramu@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fas fa-envelope-open-text  iconn ml-4"></i>
               </a>
             </li>
             <li className="nav-profiles">
-              <a href="/resume" target="_blank">
+              <a href={resume} target="_blank" rel="noopener noreferrer">
                 <i className=" far fa-file iconn ml-4"> Resume</i>
               </a>
             </li>

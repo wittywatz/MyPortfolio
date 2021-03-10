@@ -1,5 +1,6 @@
 import React from 'react';
 import profile from '../images/profile.jpg';
+import resume from '../../static/Resume.pdf';
 import './AboutPage.css';
 
 const AboutPage = () => {
@@ -70,7 +71,12 @@ const AboutPage = () => {
                 </button>
 
                 <button className="mt-1 text-center">
-                  <a className="text-dark text-center" href="#About">
+                  <a
+                    className="text-dark text-center"
+                    href={resume}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span style={{ color: '#42f55d' }}>
                       <i className=" far fa-file iconn"> Resume</i>
                     </span>

@@ -15,10 +15,7 @@ const Awards = () => {
         Faculty of Engineering Best Student (J.A Soremekun Memorial Prize) -
         <span style={{ color: '#42f55d' }}> 2017</span>
       </p>
-      <p className="accolade">
-        Faculty of Engineering Best Student (J.A Soremekun Memorial Prize) -
-        <span style={{ color: '#42f55d' }}> 2017</span>
-      </p>
+
       <p className="accolade">
         National Association of Electrical and Electronics Engineering Student
         Most Intellectual Student (Fuoye Chapter) -

@@ -4,6 +4,7 @@ import { profileActive } from '../../actions';
 import Awards from './Awards';
 import Certifications from './Certifications';
 import Education from './Education';
+import Experience from './Experience';
 import './ProfileSection.css';
 import Skills from './Skills';
 
@@ -37,12 +38,18 @@ const ProfileSection = ({ sections, profileActive, selectedSection }) => {
         return <Certifications />;
       case 'awards':
         return <Awards />;
+      case 'experience':
+        return <Experience />;
       default:
         return <Education />;
     }
   };
   return (
-    <div className="bg-dark text-white">
+    <div
+      id="Profile"
+      style={{ paddingTop: '4rem' }}
+      className="bg-dark text-white"
+    >
       <div className="container">
         <div className="section-body">
           <div className="section-header" style={{ zIndex: '5' }}>

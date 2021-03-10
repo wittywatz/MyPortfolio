@@ -95,16 +95,13 @@
   background: #64ffda;
 }
 
-.project-titles,
+.project-titles {
+  margin: 0 auto;
+}
 .project-github-link {
-  justify-self: center;
-  align-self: center;
+  margin: auto 0;
 }
 
- {
-  justify-self: center;
-  align-self: center;
-}
 .file-icon-click {
   font-size: 2rem;
   padding: 10px;
@@ -172,6 +169,9 @@
     height: 92%;
     border-right: unset;
     border-bottom: 1px solid #64ffda;
+  }
+  .project-github-link {
+    margin: 0 auto;
   }
   .file-icon-click {
     font-size: 1.2rem;

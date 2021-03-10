@@ -22,7 +22,7 @@ const Skills = () => {
                 aria-valuenow={skill.value}
                 aria-valuemin="0"
                 aria-valuemax="100"
-                style={{ width: skill.percentage, background: '#42f55d' }}
+                style={{ width: skill.percentage, backgroundColor: '#42f55d' }}
               />
             </div>
           </div>
@@ -42,7 +42,11 @@ const Skills = () => {
       <h5 style={{ color: '#14df33' }}>STACKS</h5>
       <p>
         <span style={{ color: '#42f55d' }}>Webdevelopment:</span>
-        <em> React JS, Redux, Express JS, Node JS</em>
+        <em>
+          {' '}
+          React JS, Redux, Express JS, Node JS, Bootstrap, Materialize CSS,
+          Semantic UI, jQuery.
+        </em>
       </p>
       <p>
         <span style={{ color: '#42f55d' }}>Data Analysis:</span>

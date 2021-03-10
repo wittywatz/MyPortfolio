@@ -16,6 +16,7 @@
 .bbbb {
   display: flex;
   justify-content: center;
+  padding: 0 10px;
   align-items: center;
   transition: all 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 }
@@ -23,7 +24,7 @@ button {
   border: 1px solid #64ffda;
   background-color: #343a40;
 
-  border-radius: 7px;
+  border-radius: 5px;
   color: #64ffda;
   padding: 10px;
   outline: none;

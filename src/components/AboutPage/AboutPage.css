@@ -1,11 +1,5 @@
-.about-page {
-  /* height: 100vh; */
-  /* opacity: 0.95; */
-  z-index: 100;
-}
-
 .about-container {
-  padding: 15rem 0;
+  padding: 7rem 0;
   /* overflow: scroll; */
 }
 .aaaaa {
@@ -14,14 +8,14 @@
 }
 .image-box {
   width: 600px;
-  height: 600px;
+  /* height: 600px; */
   box-shadow: 10px 10px 5px #5d6369;
 }
 
 @media (max-width: 765px) {
   .image-box {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    /* height: 400px; */
   }
 }
 .text-box {
