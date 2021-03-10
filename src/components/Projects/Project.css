@@ -122,6 +122,8 @@
 .icon-before-content-2 {
   display: none;
 }
+
+/* MEDIA QUERY */
 @media (max-width: 770px) {
   .project-contents,
   .project-contents-2 {
@@ -143,9 +145,13 @@
   }
   .main-project-content {
     border-top: 1px solid #64ffda;
+    border-left: 1px solid #64ffda;
+    border-right: 2px solid #64ffda;
   }
   .main-project-content-2 {
     border-bottom: 1px solid #64ffda;
+    border-left: 1px solid #64ffda;
+    border-right: 1px solid #64ffda;
     flex-direction: column;
   }
   .project-name {
@@ -157,8 +163,6 @@
     padding: 0px;
     margin: 0;
     height: 250px;
-    border-left: 1px solid #64ffda;
-    border-right: 1px solid #64ffda;
   }
 
   .project-titles {

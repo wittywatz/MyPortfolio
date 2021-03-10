@@ -56,7 +56,9 @@ const Project = ({ projects }) => {
                 <span style={{ color: '#42f55d' }}>Description:</span>
                 <ul style={{ paddingLeft: '10px', marginBottom: '0px' }}>
                   {project.description.map((description, i) => (
-                    <li key={i}>{description}</li>
+                    <li className="text-justify" key={i}>
+                      {description}
+                    </li>
                   ))}
                 </ul>
               </div>
