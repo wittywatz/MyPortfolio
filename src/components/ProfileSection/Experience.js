@@ -8,7 +8,7 @@ const Experience = ({ experiences }) => {
         <div key={i} className="description mb-2">
           <div
             style={{ display: 'flex', justifyContent: 'space-between' }}
-            classname="exp-header"
+            className="exp-header"
           >
             <div>{experiences.title}</div>
             <div style={{ color: '#42f55d' }}>{experiences.duration}</div>

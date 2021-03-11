@@ -15,7 +15,7 @@ const projects = () => {
     {
       name: 'Crown Enterprise',
       liveApp: 'https://crown-enterprise.herokuapp.com',
-      videoDemo: 'https://www.youtube.com/watch?v=ysz5S6PUM-U',
+      videoDemo: 'https://www.youtube.com/watch?v=DKCa4JhFfRs&t=27s',
       github: 'https://github.com/wittywatz/crown-clothing',
       stack:
         'Express, React, Redux, SCSS, Styled Components, Firebase, Firestore, Stripe, Express-SSLify, Cors.',
@@ -31,7 +31,7 @@ const projects = () => {
     {
       name: 'Mailer',
       liveApp: 'https://mailer-app-watson.herokuapp.com',
-      videoDemo: 'https://www.youtube.com/watch?v=ysz5S6PUM-U',
+      videoDemo: 'https://www.youtube.com/watch?v=bcJVTxR3KCg&t=19s',
       github: 'https://github.com/wittywatz/Mailer',
       stack:
         'Express JS, React JS, Passport JS, CSS, Redux, Redux Form, Mongoose, MongoDB, Stripe, SendGrid',
@@ -49,7 +49,7 @@ const projects = () => {
     {
       name: 'Color Picker',
       liveApp: 'https://wittywatz.github.io/color-picker/',
-      videoDemo: 'https://www.youtube.com/watch?v=ysz5S6PUM-U',
+      videoDemo: 'https://www.youtube.com/watch?v=IHOwoQFW8eo',
       github: 'https://github.com/wittywatz/color-picker',
       stack: 'React JS, CSS, SCSS, Styled Components.',
       description: [

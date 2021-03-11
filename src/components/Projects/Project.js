@@ -22,7 +22,7 @@ const Project = ({ projects }) => {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fas fa-link"></i> {project.name}
+              <i className="fas fa-link"></i> {project.name}
             </a>
           </h6>
           <div className="main-project-content">
@@ -45,7 +45,7 @@ const Project = ({ projects }) => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i class="fas fa-link"></i> {project.name.toUpperCase()}
+                  <i className="fas fa-link"></i> {project.name.toUpperCase()}
                 </a>
               </div>
               <div className="stacks-used pb-1">
