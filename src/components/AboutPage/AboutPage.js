@@ -22,33 +22,39 @@ const AboutPage = () => {
             </div>
             <div className="col-md-6 col-sm-12 text-justify text-white">
               <p>
-                I am a proactive, teachable, detail-oriented, and self-motivated
-                individual with a flair for learning and re-learning who loves
-                to give my best on any task I am assigned to, as quality for me
-                is paramount. I hold a master’s degree{' '}
+                I hold a Master’s degree{' '}
                 <span style={{ color: '#42f55d' }}>(distinction)</span> in
                 Electrical and Computer Engineering from the University of
                 Waterloo, Ontario, Canada where I took courses pertaining to
                 Software Engineering, Data Analysis, Image Processing, Control
-                Engineering and Business.
+                Engineering, and Business.
               </p>
               <p>
-                Upon completion of my degree, I took a delve into Web
-                Development in a bid to make responsive, scalable, and
-                user-friendly interfaces. So far, I have learnt how to design
-                algorithms with the use of adequate data structures to reduce
-                the downtime posed by information access and retrieval, CRUD
-                operations, work with relational and non-relational databases,
-                HTML, CSS, JavaScript, React JS, Redux, Express JS, Node JS,
-                etc.
+                I am a proactive and self-motivated individual with a flair for
+                learning and re-learning. Upon completion of my degree, I took a
+                delve into Web Development in a bid to make responsive,
+                scalable, and user-friendly interfaces. I can confidently use
+                HTML, CSS, JavaScript (ES6), React JS, Redux, Express JS, Node
+                JS, etc. and also;
+                <div className="description">
+                  <ul>
+                    <li>
+                      Design algorithms with the use of adequate data structures
+                      to reduce the downtime posed by information access and
+                      retrieval.
+                    </li>
+                    <li>Perform CRUD operations.</li>
+                    <li>Work with relational and non-relational databases.</li>
+                  </ul>
+                </div>
               </p>
               <p>
                 I design and build RESTful APIs for web services and also
-                consume them to make responsive websites. Also, I am conversant
+                consume them to make responsive websites. I am also conversant
                 with machine learning algorithms and have worked on both object
                 classification and detection tasks.{' '}
               </p>
-              <p>
+              {/* <p>
                 I am currently seeking a full-time position at a value adding
                 organization where I could leverage my skills to help in the
                 problem-solving process while also developing myself and gaining
@@ -56,7 +62,7 @@ const AboutPage = () => {
                 ends, as a product and quality oriented individual, I would sure
                 put forth my best to deliver excellent performing results and
                 nothing short.
-              </p>
+              </p> */}
               <div className="aaaaa">
                 <button className="mt-1 mr-3 text-center">
                   <a

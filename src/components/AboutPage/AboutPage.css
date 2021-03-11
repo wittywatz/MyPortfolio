@@ -7,14 +7,14 @@
   justify-content: space-evenly;
 }
 .image-box {
-  width: 600px;
+  height: 550px;
   /* height: 600px; */
   box-shadow: 10px 10px 5px #5d6369;
 }
 
 @media (max-width: 765px) {
   .image-box {
-    width: 500px;
+    height: 450px;
     /* height: 400px; */
   }
 }
