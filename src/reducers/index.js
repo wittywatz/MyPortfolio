@@ -105,6 +105,15 @@ const certs = () => {
 const experiences = () => {
   return [
     {
+      title: 'Software Developer',
+      duration: 'Jun 2021 - Aug 2021',
+      organization: 'Neo Financial, Calgary, Alberta, Canada',
+      roles: [
+        'Implemented logic to create credit statements and also send to Symcor for printing using Node, React, AWS, Terraform, Typescript, GraphQL, MongoDB, Jest',
+        'Implemented code to send declined transactions to third-party API (Fraud Net) and store the response using Node, AWS, Typescript, Terraform, MongoDB, Jest',
+      ],
+    },
+    {
       title: "Master's Degree",
       duration: 'Sep 2019 - Dec 2020',
       organization: 'University of Waterloo, Waterloo, Ontario, Canada',
