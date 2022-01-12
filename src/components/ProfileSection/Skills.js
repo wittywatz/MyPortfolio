@@ -5,7 +5,7 @@ const Skills = () => {
     { language: 'Javascript', value: '85', percentage: '85%' },
     { language: 'HTML', value: '83', percentage: '83%' },
     { language: 'CSS', value: '80', percentage: '80%' },
-    { language: 'TypeScript', value: '70', percentage: '70%' },
+    { language: 'TypeScript', value: '83', percentage: '83%' },
     { language: 'Matlab', value: '84', percentage: '84%' },
   ];
 

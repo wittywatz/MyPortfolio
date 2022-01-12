@@ -27,6 +27,18 @@ const projects = () => {
         'Ensured URL redirect from HTTP to HTTPS by integrating EXPRESS-SSLIFY.',
         'Ensured the web application was PWA compliant.',
       ],
+    }, {
+      name: 'Natours',
+      liveApp: 'https://natours-watson.herokuapp.com',
+      videoDemo: 'https://youtu.be/yUF2wyzE8YA',
+      github: 'https://github.com/wittywatz/natours-project',
+      stack:
+        'Express, MongoDB, Mapbox, Pug, Redux, CSS, Stripe, Multer, Cors.',
+      description: [
+        'Created a server side rendered e-commerce web application using EXPRESS JS, PUG TEMPLATE, CSS, JWT, MongoDB etc.',
+        'Integrated STRIPE API to handle payment on both the front and backend.',
+        'Deployed application to heroku'
+      ],
     },
     {
       name: 'Mailer',
@@ -45,7 +57,18 @@ const projects = () => {
         'Ensured URL redirect from HTTP to HTTPS by integrating EXPRESS-SSLIFY.',
         'Ensured the web application was PWA compliant.',
       ],
+    }, {
+      name: 'Share Me',
+      liveApp: 'https://shareme-social-app.netlify.app/',
+      videoDemo: 'https://youtu.be/Nc21pFIA6eQ',
+      github: 'https://github.com/wittywatz/ShareMe',
+      stack: 'React JS, CSS, SCSS, Styled Components.',
+      description: [
+        'Built a social media application using React JS, Tailwind CSS and Sanity IO for sharing, downloading and saving pictures',
+        'Hosted on netlify',
+      ],
     },
+    
     {
       name: 'Color Picker',
       liveApp: 'https://wittywatz.github.io/color-picker/',
@@ -114,7 +137,7 @@ const experiences = () => {
       ],
     },
     {
-      title: "Master's Degree",
+      title: "Data Scientist",
       duration: 'Sep 2019 - Dec 2020',
       organization: 'University of Waterloo, Waterloo, Ontario, Canada',
       roles: [
