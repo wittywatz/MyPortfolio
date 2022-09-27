@@ -133,11 +133,13 @@ const experiences = () => {
       duration: 'Jan 2022 - Present',
       organization: 'Filament AI, Toronto, Ontario, Canada',
       roles: [
+        'Designing and creating ETL pipelines using Azure Data Factory, Azure Functions, Azure SQL Database, and Azure blob storage to transform clients’ data from multiple data sources.',
+        'Building a financial service tool to cater to CIM extraction and generate deal sheets from financial data using Node Js, React JS, Flask, Machine Learning, and GCP.',
         'Deployed and created a customized API to cater for client’s BRIE chatbot needs using Node Js, Express JS, and EBM.',
         'Designed database schema, Created API endpoints and built a client facing application using React JS, Knex JS, MySql, Express JS for Rising Academy.',
         'Created an optimized automated python script to aid data processing and table extraction from pdf using Python, Numpy, Pandas, tabula-py, and Camelot-py.',
         'Integrated custom JavaScript and CSS files to cater to clients’ needs on an EBM chat widget.',
-        'Mentored interns towards completion of their capstone projects, providing regular feedback.',
+        'Mentor interns on projects and be better developers, providing regular feedback.',
       ],
     },
     {
