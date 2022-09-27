@@ -139,7 +139,7 @@ const experiences = () => {
         'Designed database schema, Created API endpoints and built a client facing application using React JS, Knex JS, MySql, Express JS for Rising Academy.',
         'Created an optimized automated python script to aid data processing and table extraction from pdf using Python, Numpy, Pandas, tabula-py, and Camelot-py.',
         'Integrated custom JavaScript and CSS files to cater to clients’ needs on an EBM chat widget.',
-        'Mentor interns on projects and be better developers, providing regular feedback.',
+        'Mentor interns on capstone projects and towards being better developers, providing regular feedback.',
       ],
     },
     {
