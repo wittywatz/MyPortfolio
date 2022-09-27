@@ -27,17 +27,17 @@ const projects = () => {
         'Ensured URL redirect from HTTP to HTTPS by integrating EXPRESS-SSLIFY.',
         'Ensured the web application was PWA compliant.',
       ],
-    }, {
+    },
+    {
       name: 'Natours',
       liveApp: 'https://natours-watson.herokuapp.com',
       videoDemo: 'https://youtu.be/yUF2wyzE8YA',
       github: 'https://github.com/wittywatz/natours-project',
-      stack:
-        'Express, MongoDB, Mapbox, Pug, Redux, CSS, Stripe, Multer, Cors.',
+      stack: 'Express, MongoDB, Mapbox, Pug, Redux, CSS, Stripe, Multer, Cors.',
       description: [
         'Created a server side rendered e-commerce web application using EXPRESS JS, PUG TEMPLATE, CSS, JWT, MongoDB etc.',
         'Integrated STRIPE API to handle payment on both the front and backend.',
-        'Deployed application to heroku'
+        'Deployed application to heroku',
       ],
     },
     {
@@ -57,7 +57,8 @@ const projects = () => {
         'Ensured URL redirect from HTTP to HTTPS by integrating EXPRESS-SSLIFY.',
         'Ensured the web application was PWA compliant.',
       ],
-    }, {
+    },
+    {
       name: 'Share Me',
       liveApp: 'https://shareme-social-app.netlify.app/',
       videoDemo: 'https://youtu.be/Nc21pFIA6eQ',
@@ -68,7 +69,7 @@ const projects = () => {
         'Hosted on netlify',
       ],
     },
-    
+
     {
       name: 'Color Picker',
       liveApp: 'https://wittywatz.github.io/color-picker/',
@@ -128,8 +129,30 @@ const certs = () => {
 const experiences = () => {
   return [
     {
+      title: 'Full Stack Developer',
+      duration: 'Jan 2022 - Present',
+      organization: 'Filament AI, Toronto, Ontario, Canada',
+      roles: [
+        'Deployed and created a customized API to cater for client’s BRIE chatbot needs using Node Js, Express JS, and EBM.',
+        'Designed database schema, Created API endpoints and built a client facing application using React JS, Knex JS, MySql, Express JS for Rising Academy.',
+        'Created an optimized automated python script to aid data processing and table extraction from pdf using Python, Numpy, Pandas, tabula-py, and Camelot-py.',
+        'Integrated custom JavaScript and CSS files to cater to clients’ needs on an EBM chat widget.',
+        'Mentored interns towards completion of their capstone projects, providing regular feedback.',
+      ],
+    },
+    {
+      title: 'Web Application Developer',
+      duration: 'Aug 2021 - Dec 2021',
+      organization: 'Divergence Neuro, Toronto, Ontario, Canada',
+      roles: [
+        'Worked with the backend team towards integrating API endpoints to develop a client-facing application using React JS, AWS.',
+        'Enabled PWA compliance and integrated service workers to enable fallback to cache.',
+        'Integrated QR scanner and Bluetooth using React JS  for connecting the Neurosity device ',
+      ],
+    },
+    {
       title: 'Software Developer',
-      duration: 'Jun 2021 - Aug 2021',
+      duration: 'Jan 2021 - Aug 2021',
       organization: 'Neo Financial, Calgary, Alberta, Canada',
       roles: [
         'Implemented logic to create credit statements and also send to Symcor for printing using Node, React, AWS, Terraform, Typescript, GraphQL, MongoDB, Jest',
@@ -137,7 +160,7 @@ const experiences = () => {
       ],
     },
     {
-      title: "Data Scientist",
+      title: 'Data Scientist',
       duration: 'Sep 2019 - Dec 2020',
       organization: 'University of Waterloo, Waterloo, Ontario, Canada',
       roles: [
@@ -149,7 +172,7 @@ const experiences = () => {
     },
     {
       title: 'Graduate Assistant',
-      duration: 'May 2018 - Mar 2019',
+      duration: 'Jan 2018 - Mar 2019',
       organization: 'University of Ilorin, Ilorin, Kwara State, Nigeria',
       roles: [
         'Lead discussion sections, tutorials, or laboratory sections for 200, 300 and 400 level students',
