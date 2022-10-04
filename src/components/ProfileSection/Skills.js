@@ -22,7 +22,7 @@ const Skills = () => {
                 aria-valuenow={skill.value}
                 aria-valuemin="0"
                 aria-valuemax="100"
-                style={{ width: skill.percentage, backgroundColor: '#42f55d' }}
+                style={{ width: skill.percentage, backgroundColor: '#00B4D8' }}
               />
             </div>
           </div>
@@ -37,27 +37,31 @@ const Skills = () => {
   });
   return (
     <div className="pt-3">
-      <h5 style={{ color: '#14df33' }}>PROGRAMMING</h5>
+      <h5 style={{ color: '#00B4D8' }}>PROGRAMMING</h5>
       <div className="row pb-4">{renderContent}</div>
-      <h5 style={{ color: '#14df33' }}>STACKS</h5>
+      <h5 style={{ color: '#00B4D8' }}>STACKS</h5>
       <p>
-        <span style={{ color: '#42f55d' }}>Webdevelopment:</span>
+        <span style={{ color: '#00B4D8' }}>Web development:</span>
         <em>
           {' '}
           React JS, Redux, Express JS, Node JS, Bootstrap, Materialize CSS,
-          Semantic UI, jQuery.
+          Material UI, Tailwind CSS, Chakra UI, Semantic UI, GraphQL, jQuery.
         </em>
       </p>
       <p>
-        <span style={{ color: '#42f55d' }}>Data Analysis:</span>
+        <span style={{ color: '#00B4D8' }}>Data Analysis:</span>
         <em> NumPy, Pandas, Scikit-learn, Matplotlib, TensorFlow, Keras.</em>
       </p>
       <p>
-        <span style={{ color: '#42f55d' }}>Database:</span>
+        <span style={{ color: '#00B4D8' }}>Database:</span>
         <em> MySQL, PostgreSQL, MongoDB.</em>
       </p>
       <p>
-        <span style={{ color: '#42f55d' }}>Others:</span>
+        <span style={{ color: '#00B4D8' }}>Cloud:</span>
+        <em> AWS, GCP, Azure.</em>
+      </p>
+      <p>
+        <span style={{ color: '#00B4D8' }}>Others:</span>
         <em> Git, Linux, Heroku, Agile (Scrum).</em>
       </p>
     </div>

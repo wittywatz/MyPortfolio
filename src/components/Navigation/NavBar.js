@@ -9,7 +9,7 @@ const NavBar = () => {
       <div className="container-fluid">
         <a className="navbar-brand" href="#Home">
           <img src={homepage} alt="Home" width="30" height="24" />
-          <span className="ml-2 navContent" style={{ color: '#42f55d' }}>
+          <span className="ml-2 navContent" style={{ color: '#00B4D8' }}>
             Watson
           </span>
         </a>
@@ -33,7 +33,7 @@ const NavBar = () => {
               <a
                 className="nav-link navContent"
                 href="#About"
-                style={{ color: '#42f55d' }}
+                style={{ color: '#00B4D8' }}
               >
                 About
               </a>
@@ -42,7 +42,7 @@ const NavBar = () => {
               <a
                 className="nav-link navContent"
                 href="#Profile"
-                style={{ color: '#42f55d' }}
+                style={{ color: '#00B4D8' }}
               >
                 Profile
               </a>
@@ -51,7 +51,7 @@ const NavBar = () => {
               <a
                 className="nav-link navContent"
                 href="#Projects"
-                style={{ color: '#42f55d' }}
+                style={{ color: '#00B4D8' }}
               >
                 Projects
               </a>

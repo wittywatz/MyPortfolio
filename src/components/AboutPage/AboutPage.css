@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-evenly;
 }
+
 .image-box {
   height: 550px;
   /* height: 600px; */
@@ -19,7 +20,7 @@
   }
 }
 .text-box {
-  text-shadow: 5px 5px 10px #c5e4cd;
+  /* text-shadow: 5px 5px 10px #90e0ef; */
 }
 @media (max-width: 768px) {
   .about-container {

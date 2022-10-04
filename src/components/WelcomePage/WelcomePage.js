@@ -7,7 +7,7 @@ const WelcomePage = () => {
     <div id={'Home'} className="jumbotron text-center mt-0 welcome_page mb-0 ">
       <div className="">
         <h1 className="display-3 text-white animate__animated animate__zoomInDown">
-          Hi, I'm <span style={{ color: '#42f55d' }}>Watson Agbramu</span>
+          Hi, I'm <span style={{ color: '#00B4D8' }}>Watson Agbramu</span>
         </h1>
         <h3 className="text-white mb-5 animate__animated animate__bounceInUp animate__delay-1s">
           <span> I am </span>
@@ -32,7 +32,7 @@ const WelcomePage = () => {
         >
           <button className="">
             <a className="" href="#About">
-              <span style={{ color: '#42f55d' }}>Get to know me</span>
+              <span style={{ color: '#00B4D8' }}>Get to know me</span>
             </a>
           </button>
         </div>

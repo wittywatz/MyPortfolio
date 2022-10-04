@@ -3,35 +3,35 @@ nav {
 }
 
 nav .container-fluid .nav-profiles .iconn {
-  color: #42f55d;
+  color: #00b4d8;
 }
 
 nav .container-fluid .nav-profiles .iconn:hover {
-  color: #64ffda;
+  color: #90e0ef;
   transform: scale(1.05);
 }
 
 nav .container-fluid .nav-item:hover {
-  color: #42f55d;
+  color: #00b4d8;
   opacity: 1;
 
-  border-bottom: 0.05rem solid #42f55d;
+  border-bottom: 0.05rem solid #00b4d8;
 }
 
 nav .navbar-toggler:hover {
   color: black;
   opacity: 0.7;
 
-  border: 1px solid #42f55d;
+  border: 1px solid #00b4d8;
 }
 
 @media (max-width: 993px) {
   nav .container-fluid .nav-item:hover {
-    color: #42f55d;
+    color: #00b4d8;
 
     opacity: 1;
     width: 4rem;
-    border-bottom: 0.05rem solid #42f55d;
+    border-bottom: 0.05rem solid #00b4d8;
   }
 
   nav .container-fluid .links-size {

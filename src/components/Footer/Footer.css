@@ -14,6 +14,6 @@
   transition: transform 0.3s ease-in-out;
 }
 .icon-footer:hover {
-  color: #64ffda;
+  color: #90e0ef;
   transform: scale(1.1);
 }

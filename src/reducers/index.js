@@ -135,11 +135,11 @@ const experiences = () => {
       roles: [
         'Designing and creating ETL pipelines using Azure Data Factory, Azure Functions, Azure SQL Database, and Azure blob storage to transform clients’ data from multiple data sources.',
         'Building a financial service tool to cater to CIM extraction and generate deal sheets from financial data using Node Js, React JS, Flask, Machine Learning, and GCP.',
+        'Providing mentorship, professional guidance, and insight to  interns on their project deliverables',
         'Deployed and created a customized API to cater for client’s BRIE chatbot needs using Node Js, Express JS, and EBM.',
         'Designed database schema, Created API endpoints and built a client facing application using React JS, Knex JS, MySql, Express JS for Rising Academy.',
         'Created an optimized automated python script to aid data processing and table extraction from pdf using Python, Numpy, Pandas, tabula-py, and Camelot-py.',
         'Integrated custom JavaScript and CSS files to cater to clients’ needs on an EBM chat widget.',
-        'Mentor interns on capstone projects and towards being better developers, providing regular feedback.',
       ],
     },
     {
@@ -158,6 +158,7 @@ const experiences = () => {
       organization: 'Neo Financial, Calgary, Alberta, Canada',
       roles: [
         'Implemented logic to create credit statements and also send to Symcor for printing using Node, React, AWS, Terraform, Typescript, GraphQL, MongoDB, Jest',
+        'Optimized the bank microservice to provide a seamless payment gateway via MasterCard',
         'Implemented code to send declined transactions to third-party API (Fraud Net) and store the response using Node, AWS, Typescript, Terraform, MongoDB, Jest',
       ],
     },
@@ -173,8 +174,19 @@ const experiences = () => {
       ],
     },
     {
+      title: 'Software Developer',
+      duration: 'Jan 2018 - Jul 2019',
+      organization: 'Finklassic, Lagos State, Nigeria',
+      roles: [
+        'Created an algorithm and an automated script to handle the dispatch of texts provided by customers to be sent to their targeted audience.',
+        'Increased company revenue by over 30% through the creation of an automated pipeline to perform tasks.',
+        'Documented and wrote unit and integrated test cases to ensure better product quality across the board.',
+        'Designed the logic flow that was used as a survey administrator which unambiguously processed, collated, and tracked user feedback retrieved via text.',
+      ],
+    },
+    {
       title: 'Graduate Assistant',
-      duration: 'Jan 2018 - Mar 2019',
+      duration: 'April 2018 - Mar 2019',
       organization: 'University of Ilorin, Ilorin, Kwara State, Nigeria',
       roles: [
         'Lead discussion sections, tutorials, or laboratory sections for 200, 300 and 400 level students',

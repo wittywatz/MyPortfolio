@@ -5,8 +5,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-  font-family: 'Montserrat', sans-serif;
+  /* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
+  font-family: sans-serif;
 }
 
 /* width */
@@ -21,12 +21,12 @@ body::-webkit-scrollbar-track {
 
 /* Handle */
 body::-webkit-scrollbar-thumb {
-  background: #42f55d;
+  background: #00b4d8;
 }
 
 /* Handle on hover */
 body::-webkit-scrollbar-thumb:hover {
-  background: #64ffda;
+  background: #90e0ef;
 }
 
 .particles {

@@ -49,11 +49,11 @@ const Project = ({ projects }) => {
                 </a>
               </div>
               <div className="stacks-used pb-1">
-                <span style={{ color: '#42f55d' }}>Stacks:</span>{' '}
+                <span style={{ color: '#00B4D8' }}>Stacks:</span>{' '}
                 {project.stack}
               </div>
               <div className="description">
-                <span style={{ color: '#42f55d' }}>Description:</span>
+                <span style={{ color: '#00B4D8' }}>Description:</span>
                 <ul style={{ paddingLeft: '10px', marginBottom: '0px' }}>
                   {project.description.map((description, i) => (
                     <li className="text-justify" key={i}>
@@ -107,7 +107,7 @@ const Project = ({ projects }) => {
               target="_blank"
               rel="noreferrer"
             >
-              <span style={{ color: '#42f55d' }}>
+              <span style={{ color: '#00B4D8' }}>
                 {/* <i className=" far fa-file iconn"> */} More Projects and
                 Algorithms on Github
                 {/* </i> */}

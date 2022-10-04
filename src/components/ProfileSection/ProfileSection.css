@@ -27,12 +27,12 @@ li {
 
 /* Handle */
 .section-header::-webkit-scrollbar-thumb {
-  background: #42f55d;
+  background: #00b4d8;
 }
 
 /* Handle on hover */
 .section-header::-webkit-scrollbar-thumb:hover {
-  background: #64ffda;
+  background: #90e0ef;
 }
 
 @media (max-width: 523px) {
@@ -49,24 +49,25 @@ li {
 }
 
 .education {
-  box-shadow: 5px 5px 10px #64ffda;
-  border-left: 0.2rem solid #42f55d;
+  /* box-shadow: 5px 5px 10px #90E0EF; */
+  border-left: 0.2rem solid #00b4d8;
   /* padding: 0 10px; */
   /* margin: 0 auto; */
+  /* margin-left: 1rem; */
 }
 
 .certts {
   display: flex;
   /* justify-content: space-around; */
   align-items: center;
-  border-left: 0.2rem solid #42f55d;
-  border-top: 0.2rem solid #42f55d;
-  box-shadow: 5px 5px 10px #64ffda;
+  border-left: 0.2rem solid #00b4d8;
+  /* border-top: 0.2rem solid #00B4D8; */
+  /* box-shadow: 5px 5px 10px #90E0EF; */
   padding: 10px;
 }
 .accolade {
-  border-left: 0.2rem solid #42f55d;
-  border-right: 0.2rem solid #42f55d;
+  border-left: 0.2rem solid #00b4d8;
+  /* border-right: 0.2rem solid #00B4D8; */
   padding: 10px;
 }
 .degree-section {
@@ -79,13 +80,13 @@ li {
 }
 
 .section-header-content:hover {
-  color: #42f55d;
+  color: #00b4d8;
 }
 
 .activeSection {
-  color: #42f55d;
+  color: #00b4d8;
   padding-bottom: 5px;
-  border-right: 0.2rem solid #42f55d;
-  border-left: 0.2rem solid #42f55d;
-  border-top: 0.2rem solid #42f55d;
+  border-right: 0.2rem solid #00b4d8;
+  border-left: 0.2rem solid #00b4d8;
+  border-top: 0.2rem solid #00b4d8;
 }

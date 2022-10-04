@@ -7,7 +7,10 @@ const AboutPage = () => {
   return (
     <div className="bg-dark m-0 pt-4 about-page">
       <div id="About" className="about-container">
-        <h1 className="text-center m-0 pb-5 text-white">
+        <h1
+          className="text-center m-0 pb-5 about-header"
+          style={{ color: '#00b4d8' }}
+        >
           <strong className="text-box">ABOUT</strong>
         </h1>
         <div className="container">
@@ -22,20 +25,22 @@ const AboutPage = () => {
             </div>
             <div className="col-md-6 col-sm-12 text-justify text-white">
               <p>
+                I am a proactive and self-motivated individual with over 4 years
+                of experience building and designing scalable web applications.
+              </p>
+              <p>
+                {' '}
                 I hold a Master’s degree{' '}
-                <span style={{ color: '#42f55d' }}>(distinction)</span> in
+                <span style={{ color: '#00B4D8' }}>(distinction)</span> in
                 Electrical and Computer Engineering from the University of
                 Waterloo, Ontario, Canada where I took courses pertaining to
                 Software Engineering, Data Analysis, Image Processing, Control
                 Engineering, and Business.
               </p>
               <p>
-                I am a proactive and self-motivated individual with a flair for
-                learning and re-learning. Upon completion of my degree, I took a
-                delve into Web Development in a bid to make responsive,
-                scalable, and user-friendly interfaces. I can confidently use
-                HTML, CSS, JavaScript (ES6), React JS, Redux, Express JS, Node
-                JS, etc. and also;
+                I can confidently use HTML, CSS, JavaScript (ES6), React JS,
+                Redux, Express JS, Node JS, Machine Learning Libraries, etc. and
+                also;
                 <div className="description">
                   <ul>
                     <li>
@@ -70,7 +75,7 @@ const AboutPage = () => {
                     href="mailto:watsonagbramu@gmail.com"
                   >
                     {' '}
-                    <span style={{ color: '#42f55d' }}>
+                    <span style={{ color: '#00B4D8' }}>
                       <i className="fas fa-envelope-open-text iconn"> Email</i>
                     </span>
                   </a>
@@ -83,7 +88,7 @@ const AboutPage = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span style={{ color: '#42f55d' }}>
+                    <span style={{ color: '#00B4D8' }}>
                       <i className=" far fa-file iconn"> Resume</i>
                     </span>
                   </a>

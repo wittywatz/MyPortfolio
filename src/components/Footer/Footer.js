@@ -5,7 +5,7 @@ const Footer = () => {
   const date = new Date();
   const linkStyle = {
     textDecoration: 'none',
-    color: '#42f55d',
+    color: '#00B4D8',
   };
   return (
     <footer className="bg-dark text-center pt-2 text-white">
