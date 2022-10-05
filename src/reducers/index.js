@@ -130,7 +130,7 @@ const experiences = () => {
   return [
     {
       title: 'Full Stack Developer',
-      duration: 'Jan 2022 - Present',
+      duration: 'Feb 2022 - Present',
       organization: 'Filament AI, Toronto, Ontario, Canada',
       roles: [
         'Designing and creating ETL pipelines using Azure Data Factory, Azure Functions, Azure SQL Database, and Azure blob storage to transform clients’ data from multiple data sources.',
@@ -144,7 +144,7 @@ const experiences = () => {
     },
     {
       title: 'Web Application Developer',
-      duration: 'Aug 2021 - Dec 2021',
+      duration: 'Aug 2021 - Oct 2021',
       organization: 'Divergence Neuro, Toronto, Ontario, Canada',
       roles: [
         'Worked with the backend team towards integrating API endpoints to develop a client-facing application using React JS, AWS.',
@@ -154,7 +154,7 @@ const experiences = () => {
     },
     {
       title: 'Software Developer',
-      duration: 'Jan 2021 - Aug 2021',
+      duration: 'Jun 2021 - Aug 2021',
       organization: 'Neo Financial, Calgary, Alberta, Canada',
       roles: [
         'Implemented logic to create credit statements and also send to Symcor for printing using Node, React, AWS, Terraform, Typescript, GraphQL, MongoDB, Jest',
@@ -163,7 +163,7 @@ const experiences = () => {
       ],
     },
     {
-      title: 'Data Scientist',
+      title: 'Data Scientist (Masters)',
       duration: 'Sep 2019 - Dec 2020',
       organization: 'University of Waterloo, Waterloo, Ontario, Canada',
       roles: [
