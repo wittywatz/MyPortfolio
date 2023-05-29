@@ -133,13 +133,13 @@ const experiences = () => {
       duration: 'Feb 2022 - Present',
       organization: 'Filament AI, Toronto, Ontario, Canada',
       roles: [
-        'Designing and creating ETL pipelines using Azure Data Factory, Azure Functions, Azure SQL Database, and Azure blob storage to transform clients’ data from multiple data sources.',
-        'Building a financial service tool to cater to CIM extraction and generate deal sheets from financial data using Node Js, React JS, Flask, Machine Learning, and GCP.',
-        'Providing mentorship, professional guidance, and insight to  interns on their project deliverables',
-        'Deployed and created a customized API to cater for client’s BRIE chatbot needs using Node Js, Express JS, and EBM.',
-        'Designed database schema, Created API endpoints and built a client facing application using React JS, Knex JS, MySql, Express JS for Rising Academy.',
-        'Created an optimized automated python script to aid data processing and table extraction from pdf using Python, Numpy, Pandas, tabula-py, and Camelot-py.',
-        'Integrated custom JavaScript and CSS files to cater to clients’ needs on an EBM chat widget.',
+        'Expertly designed and developed ETL pipelines utilizing Azure technologies including Data Factory, Functions, SQL Database, and Blob Storage, enabling efficient data transformation and migration for clients from multiple sources.',
+        'Delivered workshops to educate clients on the Azure platform, providing guidance, documentation, and hands-on assistance to successfully spin up their staging and production environments.',
+        "Built a cutting-edge financial service tool utilizing Node Js, React JS, Flask, Machine Learning, and GCP to meet client's needs for data extraction and deal sheet generation.",
+        'Provided mentorship and guidance to interns, fostering their professional growth and helping them to achieve successful project deliverables.',
+        'Created a customized API using Node Js, Express JS, EBM, and GCP to support client requirements for BRIE chatbot functionality.',
+        'Designed and implemented a database schema, developed API endpoints, and a client-facing portal using React JS, Knex JS, MySql, and Express JS for Rising Academy.',
+        'Created an optimized, automated python script using Python, Numpy, Pandas, tabula-py, and Camelot-py to streamline data processing and table extraction from pdfs, resulting in significant time and cost savings for clients.',
       ],
     },
     {
@@ -147,9 +147,9 @@ const experiences = () => {
       duration: 'Aug 2021 - Oct 2021',
       organization: 'Divergence Neuro, Toronto, Ontario, Canada',
       roles: [
-        'Worked with the backend team towards integrating API endpoints to develop a client-facing application using React JS, AWS.',
-        'Enabled PWA compliance and integrated service workers to enable fallback to cache.',
-        'Integrated QR scanner and Bluetooth using React JS  for connecting the Neurosity device ',
+        'Collaborated with the backend team to develop a client-facing web application using React JS and AWS,integrating API endpoints to deliver a seamless user experience.',
+        "Implemented Progressive Web App (PWA) compliance and integrated service workers to ensure the application's robustness and offline capabilities.",
+        'Developed a customized solution to integrate QR scanner and Bluetooth functionality using React JS, enabling seamless connection to Neurosity devices for users.',
       ],
     },
     {
@@ -157,9 +157,9 @@ const experiences = () => {
       duration: 'Jun 2021 - Aug 2021',
       organization: 'Neo Financial, Calgary, Alberta, Canada',
       roles: [
-        'Implemented logic to create credit statements and also send to Symcor for printing using Node, React, AWS, Terraform, Typescript, GraphQL, MongoDB, Jest',
-        'Optimized the bank microservice to provide a seamless payment gateway via MasterCard',
-        'Implemented code to send declined transactions to third-party API (Fraud Net) and store the response using Node, AWS, Typescript, Terraform, MongoDB, Jest',
+        'Developed and implemented complex logic utilizing Node, React, AWS, Terraform, Typescript, GraphQL, MongoDB, and Jest to design and generate credit statements for printing at Symcor.',
+        'Optimized the bank microservice to provide a smooth and efficient payment gateway experience via MasterCard integration.',
+        'Engineered the decider microservice to send declined transactions to a third-party API (Fraud Net) and effectively store responses, utilizing Node, AWS, Typescript, Terraform, MongoDB, and Jest.',
       ],
     },
     {
@@ -167,10 +167,9 @@ const experiences = () => {
       duration: 'Sep 2019 - Dec 2020',
       organization: 'University of Waterloo, Waterloo, Ontario, Canada',
       roles: [
-        'Created a dog breed classification model with Python using transfer learning on fine-tuned Inception-Resnet-V2 and Efficientnet-80 architectures and obtained an accuracy of 92.18% and 85.38% respectively on 120 dog breeds which surpassed existing literatures.',
-        'Created and proposed new annotations for a subset of INRIA person dataset using Label-Img Software to improve detection performance by over 20%.',
-        'Performed Data Augmentation using Python and trained Faster RCNN using Inception-Resnet-V2 and Resnet-50 as backbone architecture on pedestrian images obtaining an average performance of 89.6% and 86.0% respectively.',
-        'Developed part of the Teachers without Frontiers (TWF) Project deliverables by employing project management methodologies on the Science Curriculum for Grade VI and Grade VII to improve education access in remote areas of Pakistan by over 30%',
+        'Developed and implemented a dog breed classification model using transfer learning on fine-tuned Inception-Resnet-V2 and Efficientnet-80 architectures, achieving an accuracy of 92.18% and 85.38% respectively on 120 dog breeds',
+        'Proposed and implemented new annotations for a subset of the INRIA person dataset using Label-Img software, resulting in a significant improvement in detection performance by over 20%.',
+        'Utilized data augmentation techniques in Python to train Faster RCNN models on pedestrian images, achieving an average performance of 89.6% and 86.0% using Inception-Resnet-V2 and Resnet-50 as backbone architectures respectively.',
       ],
     },
     {
@@ -178,10 +177,9 @@ const experiences = () => {
       duration: 'Jan 2018 - Jul 2019',
       organization: 'Finklassic, Lagos State, Nigeria',
       roles: [
-        'Created an algorithm and an automated script to handle the dispatch of texts provided by customers to be sent to their targeted audience.',
-        'Increased company revenue by over 30% through the creation of an automated pipeline to perform tasks.',
-        'Documented and wrote unit and integrated test cases to ensure better product quality across the board.',
-        'Designed the logic flow that was used as a survey administrator which unambiguously processed, collated, and tracked user feedback retrieved via text.',
+        'Developed an algorithm and automated script to optimize the dispatch of text messages to targeted audiences, resulting in a 30% increase in company revenue.',
+        'Implemented robust documentation and testing procedures, including unit and integrated test cases, to ensure high product quality across all projects.',
+        'Designed the logic flow of a survey administrator tool that processed, collated, and tracked user feedback retrieved via text with a high level of accuracy',
       ],
     },
     {

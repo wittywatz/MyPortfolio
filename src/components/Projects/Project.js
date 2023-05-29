@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import './Project.css';
 
 const Project = ({ projects }) => {
-  const renderContents = () => {
+  const RenderContents = () => {
     return projects.map((project, i) => {
       return (
         <div
@@ -20,7 +20,7 @@ const Project = ({ projects }) => {
               href={project.liveApp}
               alt={project.name}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <i className="fas fa-link"></i> {project.name}
             </a>
@@ -43,7 +43,7 @@ const Project = ({ projects }) => {
                   href={project.liveApp}
                   alt={project.name}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   <i className="fas fa-link"></i> {project.name.toUpperCase()}
                 </a>
@@ -69,7 +69,7 @@ const Project = ({ projects }) => {
                 href={project.github}
                 alt={project.name}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 <i className="file-icon-click far fa-file-code"></i>
               </a>
@@ -80,7 +80,7 @@ const Project = ({ projects }) => {
                 href={project.liveApp}
                 alt={project.name}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 {'  '}
                 <i className="file-icon-click fas fa-link"></i>
@@ -96,7 +96,9 @@ const Project = ({ projects }) => {
   return (
     <div id="Projects" className="bg-dark text-white pt-5 p-3">
       <div className="container">
-        <div className="project-content pb-4">{renderContents()}</div>
+        <div className="project-content pb-4">
+          <RenderContents />
+        </div>
 
         <div className="text-center d-flex pt-2 justify-content-center">
           <button style={{ zIndex: '5' }} className="mt-1 text-center">
@@ -105,7 +107,7 @@ const Project = ({ projects }) => {
               href="https://github.com/wittywatz"
               alt="github link"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <span style={{ color: '#00B4D8' }}>
                 {/* <i className=" far fa-file iconn"> */} More Projects and
