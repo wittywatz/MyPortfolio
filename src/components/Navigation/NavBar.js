@@ -69,7 +69,7 @@ const NavBar = () => {
             </li>
             <li className="nav-profiles">
               <a
-                href="https://www.linkedin.com/in/watson-agbramu-a37320181/"
+                href="https://www.linkedin.com/in/watson-agbramu/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

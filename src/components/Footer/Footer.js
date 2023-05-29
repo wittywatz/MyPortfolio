@@ -22,7 +22,7 @@ const Footer = () => {
                 <i className="fab fa-github icon-footer"></i>
               </a>
               <a
-                href="https://www.linkedin.com/in/watson-agbramu-a37320181/"
+                href="https://www.linkedin.com/in/watson-agbramu/"
                 style={linkStyle}
                 target="_blank"
                 rel="noopener noreferrer"
