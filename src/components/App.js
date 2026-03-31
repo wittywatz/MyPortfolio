@@ -7,7 +7,7 @@ import WelcomePage from './WelcomePage/WelcomePage';
 import AboutPage from './AboutPage/AboutPage';
 import Footer from './Footer/Footer';
 import ProfileSection from './ProfileSection/ProfileSection';
-import Project from './Projects/Project';
+// import Project from './Projects/Project';
 
 const particleOptions = {
   particles: {
@@ -30,7 +30,7 @@ export default class App extends Component {
         <WelcomePage />
         <AboutPage />
         <ProfileSection />
-        <Project />
+        {/* <Project /> */}
         <Footer />
       </div>
     );

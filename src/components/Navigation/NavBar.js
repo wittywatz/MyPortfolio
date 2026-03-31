@@ -1,17 +1,13 @@
 import React from 'react';
-import homepage from '../images/homepage.png';
 import resume from '../../static/Resume.pdf';
 import './Navigation.css';
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light mb-0 bg-dark fixed-top">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#Home">
-          <img src={homepage} alt="Home" width="30" height="24" />
-          <span className="ml-2 navContent" style={{ color: '#00B4D8' }}>
-            Watson
-          </span>
+    <nav className="navbar navbar-expand-lg fixed-top watson-nav">
+      <div className="container">
+        <a className="navbar-brand watson-brand" href="#Home">
+          WA<span>.</span>
         </a>
         <button
           className="navbar-toggler"
@@ -22,81 +18,40 @@ const NavBar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
         </button>
-        <div
-          className="collapse navbar-collapse justify-content-end"
-          id="navbarSupportedContent"
-        >
-          <ul className="navbar-nav mr-auto">
-            <li className="nav-item ml-3">
-              <a
-                className="nav-link navContent"
-                href="#About"
-                style={{ color: '#00B4D8' }}
-              >
-                About
-              </a>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mx-auto nav-links">
+            <li className="nav-item">
+              <a className="nav-link watson-link" href="#About">About</a>
             </li>
-            <li className="nav-item ml-3 ">
-              <a
-                className="nav-link navContent"
-                href="#Profile"
-                style={{ color: '#00B4D8' }}
-              >
-                Profile
-              </a>
-            </li>
-            <li className="nav-item ml-3">
-              <a
-                className="nav-link navContent"
-                href="#Projects"
-                style={{ color: '#00B4D8' }}
-              >
-                Projects
-              </a>
+            <li className="nav-item">
+              <a className="nav-link watson-link" href="#Profile">Profile</a>
             </li>
           </ul>
-          <ul className="navbar-nav ml-auto links-size">
-            <li className="nav-profiles">
-              <a
-                href="https://github.com/wittywatz"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-github iconn ml-4"></i>
+          <ul className="navbar-nav nav-socials">
+            <li className="nav-item">
+              <a href="https://github.com/wittywatz" target="_blank" rel="noopener noreferrer" className="nav-icon">
+                <i className="fab fa-github"></i>
               </a>
             </li>
-            <li className="nav-profiles">
-              <a
-                href="https://www.linkedin.com/in/watson-agbramu/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab ml-4 fa-linkedin-in  iconn "> </i>
+            <li className="nav-item">
+              <a href="https://www.linkedin.com/in/watson-agbramu/" target="_blank" rel="noopener noreferrer" className="nav-icon">
+                <i className="fab fa-linkedin-in"></i>
               </a>
             </li>
-            <li className="nav-profiles">
-              <a
-                href="https://www.instagram.com/wittywatz"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab ml-4 fa-instagram  iconn "></i>
+            <li className="nav-item">
+              <a href="mailto:watsonagbramu@gmail.com" target="_blank" rel="noopener noreferrer" className="nav-icon">
+                <i className="fas fa-envelope"></i>
               </a>
             </li>
-            <li className="nav-profiles">
-              <a
-                href="mailto:watsonagbramu@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fas fa-envelope-open-text  iconn ml-4"></i>
-              </a>
-            </li>
-            <li className="nav-profiles">
-              <a href={resume} target="_blank" rel="noopener noreferrer">
-                <i className=" far fa-file iconn ml-4"> Resume</i>
+            <li className="nav-item">
+              <a href={resume} target="_blank" rel="noopener noreferrer" className="nav-resume-btn">
+                Resume
               </a>
             </li>
           </ul>

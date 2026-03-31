@@ -47,10 +47,14 @@ const ProfileSection = ({ sections, profileActive, selectedSection }) => {
   return (
     <div
       id="Profile"
-      style={{ paddingTop: '4rem' }}
-      className="bg-dark text-white"
+      style={{ paddingTop: '4rem', backgroundColor: '#0d1117' }}
+      className="text-white"
     >
       <div className="container">
+        <div className="text-center mb-4">
+          <p className="section-title" style={{ fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#00b4d8', marginBottom: '0.5rem' }}>Experience &amp; Skills</p>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 700, color: '#e6edf3', letterSpacing: '-0.01em' }}>My <span style={{ color: '#00b4d8' }}>Profile</span></h2>
+        </div>
         <div className="section-body">
           <div className="section-header" style={{ zIndex: '5' }}>
             {renderSections()}
