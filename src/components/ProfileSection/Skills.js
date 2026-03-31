@@ -1,12 +1,10 @@
 import React from 'react';
 const Skills = () => {
   const skills = [
-    { language: 'Python', value: '93', percentage: '93%' },
-    { language: 'Javascript', value: '85', percentage: '85%' },
-    { language: 'HTML', value: '83', percentage: '83%' },
-    { language: 'CSS', value: '80', percentage: '80%' },
-    { language: 'TypeScript', value: '83', percentage: '83%' },
-    { language: 'Matlab', value: '84', percentage: '84%' },
+    { language: 'Python', value: '95', percentage: '95%' },
+    { language: 'TypeScript', value: '90', percentage: '90%' },
+    { language: 'JavaScript', value: '90', percentage: '90%' },
+    { language: 'Rust', value: '75', percentage: '75%' },
   ];
 
   const renderContent = skills.map((skill, i) => {
@@ -41,28 +39,36 @@ const Skills = () => {
       <div className="row pb-4">{renderContent}</div>
       <h5 style={{ color: '#00B4D8' }}>STACKS</h5>
       <p>
-        <span style={{ color: '#00B4D8' }}>Web development:</span>
-        <em>
-          {' '}
-          React JS, Redux, Express JS, Node JS, Bootstrap, Materialize CSS,
-          Material UI, Tailwind CSS, Chakra UI, Semantic UI, GraphQL, jQuery.
-        </em>
+        <span style={{ color: '#00B4D8' }}>Backend:</span>
+        <em> Node.js, Express, FastAPI, GraphQL, REST.</em>
       </p>
       <p>
-        <span style={{ color: '#00B4D8' }}>Data Analysis:</span>
-        <em> NumPy, Pandas, Scikit-learn, Matplotlib, TensorFlow, Keras.</em>
+        <span style={{ color: '#00B4D8' }}>Frontend:</span>
+        <em> React, Next.js, Tailwind CSS.</em>
       </p>
       <p>
-        <span style={{ color: '#00B4D8' }}>Database:</span>
-        <em> MySQL, PostgreSQL, MongoDB.</em>
+        <span style={{ color: '#00B4D8' }}>Data Engineering:</span>
+        <em> DBT, Snowflake, Airbyte, Azure Databricks, Azure Data Factory.</em>
+      </p>
+      <p>
+        <span style={{ color: '#00B4D8' }}>AI / ML:</span>
+        <em> LangChain, OpenAI, Claude, RAG, Vector Search, TensorFlow.</em>
+      </p>
+      <p>
+        <span style={{ color: '#00B4D8' }}>Databases:</span>
+        <em> PostgreSQL, MongoDB, MySQL, Firestore.</em>
       </p>
       <p>
         <span style={{ color: '#00B4D8' }}>Cloud:</span>
-        <em> AWS, GCP, Azure.</em>
+        <em> AWS (Lambda, SQS, S3, SAM), GCP, Azure.</em>
       </p>
       <p>
-        <span style={{ color: '#00B4D8' }}>Others:</span>
-        <em> Git, Linux, Heroku, Agile (Scrum).</em>
+        <span style={{ color: '#00B4D8' }}>DevOps:</span>
+        <em> Docker, Terraform, GitHub Actions, Jenkins, AWS SAM.</em>
+      </p>
+      <p>
+        <span style={{ color: '#00B4D8' }}>Practices:</span>
+        <em> System Design, Distributed Systems, Multi-tenant Architecture, Agile.</em>
       </p>
     </div>
   );

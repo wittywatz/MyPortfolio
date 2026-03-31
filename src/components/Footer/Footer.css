@@ -1,8 +1,9 @@
 .footer-body {
   display: flex;
   flex-direction: column;
-  /* overflow: scroll; */
+  border-top: 1px solid rgba(0, 180, 216, 0.12);
 }
+
 .footer-content {
   display: flex;
   flex-direction: row;
@@ -10,10 +11,18 @@
 }
 
 .icon-footer {
-  font-size: 30px;
-  transition: transform 0.3s ease-in-out;
+  font-size: 22px;
+  transition: color 0.2s ease, transform 0.25s ease;
+  color: #8b949e;
 }
+
 .icon-footer:hover {
-  color: #90e0ef;
-  transform: scale(1.1);
+  color: #00b4d8;
+  transform: translateY(-3px);
+}
+
+footer p {
+  font-size: 0.82rem;
+  color: #8b949e;
+  letter-spacing: 0.03em;
 }

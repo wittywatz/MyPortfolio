@@ -4,37 +4,35 @@ import './WelcomePage.css';
 
 const WelcomePage = () => {
   return (
-    <div id={'Home'} className="jumbotron text-center mt-0 welcome_page mb-0 ">
+    <div id={'Home'} className="jumbotron text-center mt-0 welcome_page mb-0">
       <div className="">
-        <h1 className="display-3 text-white animate__animated animate__zoomInDown">
-          Hi, I'm <span style={{ color: '#00B4D8' }}>Watson Agbramu</span>
+        <p className="hero-greeting animate__animated animate__fadeInDown">
+          Hello, I&apos;m
+        </p>
+        <h1 className="display-3 hero-name animate__animated animate__zoomInDown">
+          Watson Agbramu
         </h1>
-        <h3 className="text-white mb-5 animate__animated animate__bounceInUp animate__delay-1s">
-          <span> I am </span>
+        <div className="hero-typing animate__animated animate__bounceInUp animate__delay-1s">
           <Typical
             loop={Infinity}
             wrapper="b"
             steps={[
-              'an Engineer.',
+              'Senior Software Engineer.',
               2000,
-              'a Web Developer.',
+              'Data Platform Engineer.',
               2000,
-              'a Data Analyst.',
+              'AI / ML Engineer.',
               2000,
-              'a Machine Learning Engineer.',
+              'Distributed Systems Builder.',
               2000,
             ]}
           />
-        </h3>
+        </div>
         <div
           style={{ zIndex: '5' }}
-          className="bbbb animate__fadeInLeft animate__animated animate__delay-2s"
+          className="bbbb animate__fadeInUp animate__animated animate__delay-2s"
         >
-          <button className="">
-            <a className="" href="#About">
-              <span style={{ color: '#00B4D8' }}>Get to know me</span>
-            </a>
-          </button>
+          <a href="#About" className="hero-btn">Get to know me</a>
         </div>
       </div>
     </div>

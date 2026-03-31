@@ -5,94 +5,53 @@ import './AboutPage.css';
 
 const AboutPage = () => {
   return (
-    <div className="bg-dark m-0 pt-4 about-page">
+    <div className="m-0 pt-4 about-page">
       <div id="About" className="about-container">
-        <h1
-          className="text-center m-0 pb-5 about-header"
-          style={{ color: '#00b4d8' }}
-        >
-          <strong className="text-box">ABOUT</strong>
-        </h1>
+        <div className="text-center mb-5">
+          <p className="section-title">Get to know me</p>
+          <h2 className="about-header">About <span>Me</span></h2>
+        </div>
         <div className="container">
-          <div className="row ">
+          <div className="row">
             <div className="col-md-6 col-sm-12 d-flex justify-content-center align-items-center image-div">
-              <img
-                // style={{ borderRadius: '100%', border: '4px solid black' }}
-                src={profile}
-                alt="Profile"
-                className=" image-box"
-              />
+              <img src={profile} alt="Profile" className="image-box" />
             </div>
-            <div className="col-md-6 col-sm-12 text-justify text-white">
+            <div className="col-md-6 col-sm-12 about-text">
               <p>
-                I am a proactive and self-motivated individual with over 4 years
-                of experience building and designing scalable web applications.
+                Seasoned Software Engineer with 7+ years of experience building
+                scalable data platforms and distributed systems across SaaS and
+                fintech.
               </p>
               <p>
-                {' '}
-                I hold a Master’s degree{' '}
+                Strong focus on multi-tenant architectures, event-driven systems,
+                and high-volume data pipelines. Proven ability to lead projects
+                from design to production and deliver systems that improve
+                performance, reliability, and data access.
+              </p>
+              <p>
+                I hold a Master&apos;s degree{' '}
                 <span style={{ color: '#00B4D8' }}>(distinction)</span> in
                 Electrical and Computer Engineering from the University of
-                Waterloo, Ontario, Canada where I took courses pertaining to
-                Software Engineering, Data Analysis, Image Processing, Control
-                Engineering, and Business.
+                Waterloo, Ontario, Canada.
               </p>
               <p>
-                I can confidently use HTML, CSS, JavaScript (ES6), React JS,
-                Redux, Express JS, Node JS, Machine Learning Libraries, etc. and
-                also;
+                My core expertise spans:
                 <div className="description">
                   <ul>
-                    <li>
-                      Design algorithms with the use of adequate data structures
-                      to reduce the downtime posed by information access and
-                      retrieval.
-                    </li>
-                    <li>Perform CRUD operations.</li>
-                    <li>Work with relational and non-relational databases.</li>
+                    <li>Data engineering with DBT, Snowflake, and Airbyte.</li>
+                    <li>AI/ML systems using LangChain, RAG, and vector search.</li>
+                    <li>Cloud infrastructure on AWS, GCP, and Azure.</li>
+                    <li>Full-stack development with React, Next.js, Node.js, and FastAPI.</li>
                   </ul>
                 </div>
               </p>
-              <p>
-                I design and build RESTful APIs for web services and also
-                consume them to make responsive websites. I am also conversant
-                with machine learning algorithms and have worked on both object
-                classification and detection tasks.{' '}
-              </p>
-              {/* <p>
-                I am currently seeking a full-time position at a value adding
-                organization where I could leverage my skills to help in the
-                problem-solving process while also developing myself and gaining
-                new experiences from the organization. Learning for me never
-                ends, as a product and quality oriented individual, I would sure
-                put forth my best to deliver excellent performing results and
-                nothing short.
-              </p> */}
               <div className="aaaaa">
-                <button className="mt-1 mr-3 text-center">
-                  <a
-                    className="text-dark text-center"
-                    href="mailto:watsonagbramu@gmail.com"
-                  >
-                    {' '}
-                    <span style={{ color: '#00B4D8' }}>
-                      <i className="fas fa-envelope-open-text iconn"> Email</i>
-                    </span>
-                  </a>
-                </button>
-
-                <button className="mt-1 text-center">
-                  <a
-                    className="text-dark text-center"
-                    href={resume}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span style={{ color: '#00B4D8' }}>
-                      <i className=" far fa-file iconn"> Resume</i>
-                    </span>
-                  </a>
-                </button>
+                <a href="mailto:watsonagbramu@gmail.com" className="about-btn">
+                  <i className="fas fa-envelope-open-text"> </i> Email
+                </a>
+                <a href={resume} target="_blank" rel="noopener noreferrer" className="about-btn">
+                  <i className="far fa-file"> </i> Resume
+                </a>
               </div>
             </div>
           </div>
@@ -101,5 +60,5 @@ const AboutPage = () => {
     </div>
   );
 };
-// animate__fadeOut;
+
 export default AboutPage;
