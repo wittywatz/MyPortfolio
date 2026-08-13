@@ -1,0 +1,84 @@
+@import 'tailwindcss';
+
+/*
+  Palette variables are deliberately NOT named --color-*. The `@theme inline`
+  block below maps them onto Tailwind's --color-* names to generate utilities.
+  If the raw tokens shared those names the mapping would be self-referential
+  (--color-bg: var(--color-bg)) and every colour would resolve to nothing.
+
+  Raw tokens, for use in inline styles and SVG attributes:
+    --bg --elev --surface --line --text --muted --faint --accent --accent-2
+    --glow-1 --glow-2
+*/
+:root,
+[data-theme='dark'] {
+  --bg: #08090c;
+  --elev: #0d0f14;
+  --surface: rgba(255, 255, 255, 0.04);
+  --line: rgba(255, 255, 255, 0.09);
+  --text: #e8eaf0;
+  --muted: #98a0b4;
+  --faint: #7d859a;
+  --accent: #6d8bff;
+  --accent-2: #31d0aa;
+  --glow-1: rgba(88, 120, 255, 0.28);
+  --glow-2: rgba(0, 220, 190, 0.14);
+}
+
+[data-theme='light'] {
+  --bg: #fbfaf8;
+  --elev: #ffffff;
+  --surface: rgba(15, 20, 40, 0.03);
+  --line: rgba(15, 20, 40, 0.12);
+  --text: #14161c;
+  --muted: #4d5464;
+  --faint: #656c7c;
+  --accent: #3552d9;
+  --accent-2: #0f7a63;
+  --glow-1: rgba(80, 110, 255, 0.14);
+  --glow-2: rgba(0, 180, 150, 0.1);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-elev: var(--elev);
+  --color-surface: var(--surface);
+  --color-border: var(--line);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
