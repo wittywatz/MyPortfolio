@@ -6,6 +6,8 @@ export type Project = {
   bullets: string[];
   /** Filename inside public/projects/, or null when no asset exists yet. */
   media: string | null;
+  /** Describes what the media actually shows. Required whenever media is set. */
+  mediaAlt: string | null;
   /** Renders the hand-built architecture diagram in place of media. */
   diagram: 'voice' | null;
 };
@@ -22,7 +24,9 @@ export const projects: Project[] = [
       'Semantic business-term layer, natural-language alerts, and automated anomaly and root-cause analysis.',
       'Usage-based Stripe billing, with Celery and Redis running scheduled and long-running jobs.',
     ],
-    media: null,
+    media: 'nl-bi-platform.jpg',
+    mediaAlt:
+      'The platform answering a plain-English question about revenue by product category: a bar chart with the generated SQL available beneath it, a banner flagging an inferred meaning for an ambiguous term, and the connected Postgres schema listed alongside.',
     diagram: null,
   },
   {
@@ -37,6 +41,7 @@ export const projects: Project[] = [
       'No audio leaves the machine at runtime.',
     ],
     media: null,
+    mediaAlt: null,
     diagram: 'voice',
   },
   {
@@ -51,6 +56,7 @@ export const projects: Project[] = [
       'Full offline capability with local SQLite and Supabase sync.',
     ],
     media: null,
+    mediaAlt: null,
     diagram: null,
   },
 ];
