@@ -1,4 +1,4 @@
-import { awards, degrees } from '../content/education';
+import { degrees } from '../content/education';
 import { profile } from '../content/profile';
 import Reveal from './Reveal';
 import Section from './Section';
@@ -60,7 +60,6 @@ export default function About() {
             </div>
           ))}
         </div>
-        <p className="mt-6 text-sm text-faint">{awards.join(' · ')}</p>
       </Reveal>
     </Section>
   );
