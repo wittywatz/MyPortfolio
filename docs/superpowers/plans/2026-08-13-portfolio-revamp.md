@@ -21,6 +21,8 @@
 - Every role displays its date range, including entries in the "Previously" strip.
 - No percentage skill bars. No certifications section. No Heroku links. No embedded video. No particle background.
 - Contrast must meet WCAG AA in both themes. Every interactive element has a visible focus ring.
+- **No em dashes (—) anywhere in user-facing copy.** This covers `src/content/`, component prose, and `index.html` metadata. Recast the sentence rather than substituting an en dash or hyphen: use a period, a colon, or a comma with restructured clauses. Date ranges such as `Sept 2024 – Aug 2026` use an en dash and are unaffected. The voice throughout is calm and professional.
+- **Commits carry no `Co-Authored-By` trailer.** Do not credit Claude as an author on commits or any other output.
 - There is no unit test suite. Each task's verification is a typecheck/build step plus, where the task produces visible output, a browser check. **Do not claim a task complete without running its verification commands and observing the output.**
 - Two dependencies are added beyond the spec's list: `@fontsource-variable/inter` and `@fontsource-variable/jetbrains-mono`. These are self-hosted font packages — no external CDN, no network request at runtime. This is a deliberate deviation, recorded here.
 
@@ -169,7 +171,7 @@ One config covers both `src` and `vite.config.ts`, so there is no `tsconfig.node
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/MyPortfolio/favicon.ico" />
-    <title>Watson Agbramu — Senior Software Engineer</title>
+    <title>Watson Agbramu | Senior Software Engineer</title>
     <script>
       (function () {
         try {
@@ -1206,7 +1208,7 @@ export default function VoiceArchitectureDiagram() {
         fill="none" stroke="var(--line)" strokeDasharray="4 4"
       />
       <text x="20" y="28" fill="var(--faint)" fontSize="10" fontFamily="var(--font-mono)">
-        DEVICE — NO NETWORK
+        DEVICE / NO NETWORK
       </text>
 
       <rect x="130" y="52" width="160" height="76" rx="10"
@@ -1553,10 +1555,11 @@ export default function About() {
         <Reveal delay={0.08}>
           <div className="space-y-4 leading-relaxed text-muted">
             <p>
-              I build production systems end to end — the API a client integrates against, the
+              I build production systems end to end: the API a client integrates against, the
               pipeline moving the data behind it, and the infrastructure both run on. Most of my
-              recent work sits where LLM products meet real engineering constraints: latency
-              budgets, tenant isolation, and outputs that have to be correct rather than plausible.
+              recent work sits where LLM products meet real engineering constraints, including
+              latency budgets, tenant isolation, and outputs that have to be correct rather than
+              plausible.
             </p>
             <p>
               At LipDub AI I own the public video-generation API and the service layer behind the
@@ -1617,8 +1620,8 @@ export default function Contact() {
           Let us talk
         </h2>
         <p className="mb-9 max-w-[52ch] leading-relaxed text-muted">
-          {profile.availability} — currently in {profile.location}. The fastest way to reach me is
-          email.
+          {profile.availability}, currently based in {profile.location}. The fastest way to reach
+          me is email.
         </p>
 
         <div className="flex flex-wrap gap-3">
@@ -1740,7 +1743,7 @@ ls -la public/og-image.png
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="/MyPortfolio/favicon.ico" />
 
-  <title>Watson Agbramu — Senior Software Engineer</title>
+  <title>Watson Agbramu | Senior Software Engineer</title>
   <meta
     name="description"
     content="Senior Software Engineer with 8+ years building production systems across SaaS, media, and fintech. LLM-powered products, multi-tenant platforms, and event-driven architecture."
@@ -1749,7 +1752,7 @@ ls -la public/og-image.png
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://wittywatz.github.io/MyPortfolio/" />
-  <meta property="og:title" content="Watson Agbramu — Senior Software Engineer" />
+  <meta property="og:title" content="Watson Agbramu | Senior Software Engineer" />
   <meta
     property="og:description"
     content="Data platforms and AI systems, built to scale. 8+ years across SaaS, media, and fintech."
@@ -1757,7 +1760,7 @@ ls -la public/og-image.png
   <meta property="og:image" content="https://wittywatz.github.io/MyPortfolio/og-image.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Watson Agbramu — Senior Software Engineer" />
+  <meta name="twitter:title" content="Watson Agbramu | Senior Software Engineer" />
   <meta
     name="twitter:description"
     content="Data platforms and AI systems, built to scale. 8+ years across SaaS, media, and fintech."

@@ -11,10 +11,10 @@ export default function App() {
         <Hero />
         <Capabilities />
         <Section id="work" eyebrow="Selected work" title="Things I have built">
-          <p className="text-muted">Placeholder — replaced in Task 6.</p>
+          <p className="text-muted">Placeholder, replaced in Task 6.</p>
         </Section>
         <Section id="experience" eyebrow="Experience" title="Where I have worked">
-          <p className="text-muted">Placeholder — replaced in Task 7.</p>
+          <p className="text-muted">Placeholder, replaced in Task 7.</p>
         </Section>
       </main>
     </div>

@@ -17,7 +17,7 @@ export function useTheme() {
     try {
       localStorage.setItem(STORAGE_KEY, theme);
     } catch {
-      // Storage unavailable (private mode) — the theme still applies for this session.
+      // Storage unavailable (private mode). The theme still applies for this session.
     }
   }, [theme]);
 

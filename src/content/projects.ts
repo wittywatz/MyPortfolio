@@ -32,7 +32,7 @@ export const projects: Project[] = [
       'Push-to-talk dictation that transcribes speech straight to the cursor in any application, with recognition and cleanup running entirely on device.',
     stack: ['Rust', 'Swift', 'Kotlin', 'whisper.cpp', 'Silero VAD', 'UniFFI'],
     bullets: [
-      'One Rust core — whisper.cpp, Silero VAD, and the session state machine — exposed through UniFFI.',
+      'A single Rust core containing whisper.cpp, Silero VAD, and the session state machine, exposed through UniFFI.',
       'Native shells on both platforms: a Swift menu-bar app on macOS and a Kotlin input method on Android.',
       'No audio leaves the machine at runtime.',
     ],
