@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { profile } from '../content/profile';
 import { useScrolled } from '../hooks/useScrolled';
@@ -14,6 +14,25 @@ const LINKS = [
 export default function Nav() {
   const scrolled = useScrolled();
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(min-width: 768px)');
+
+    // Close menu if already matches on mount
+    if (mediaQuery.matches) {
+      setOpen(false);
+    }
+
+    // Subscribe to changes
+    const handleChange = (e: MediaQueryListEvent) => {
+      if (e.matches) {
+        setOpen(false);
+      }
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, []);
 
   return (
     <header
