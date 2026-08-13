@@ -65,17 +65,23 @@ def main(out_path):
     w_pts = [((M + x) * SCALE, (70 + y) * SCALE) for x, y in w_pts]
     d.line(w_pts, fill=ACCENT, width=5 * SCALE, joint="curve")
 
+    # Both lines are centred on the monogram's own centre line using the middle
+    # anchor. Drawing from the top instead left the text block sitting lower
+    # than the mark, since its two lines are taller than the 56px square.
+    icon_cy = 98
     d.text(
-        ((M + 74) * SCALE, 84 * SCALE),
+        ((M + 74) * SCALE, (icon_cy - 13) * SCALE),
         "Watson Agbramu",
         font=font(SANS, 24, "Semibold"),
         fill=TEXT,
+        anchor="lm",
     )
     d.text(
-        ((M + 74) * SCALE, 112 * SCALE),
+        ((M + 74) * SCALE, (icon_cy + 13) * SCALE),
         "Senior Software Engineer",
         font=font(SANS, 18, "Regular"),
         fill=MUTED,
+        anchor="lm",
     )
 
     # Availability pill.
