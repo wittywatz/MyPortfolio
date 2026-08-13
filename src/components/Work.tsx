@@ -7,9 +7,9 @@ export default function Work() {
   return (
     <Section id="work" eyebrow="Selected work" title="Things I have built">
       <div className="space-y-6">
-        {projects.map((project, i) => (
+        {projects.map((project) => (
           <Reveal key={project.slug}>
-            <ProjectCard project={project} index={i} />
+            <ProjectCard project={project} />
           </Reveal>
         ))}
       </div>

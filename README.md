@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal site for Watson Agbramu. Live at
+[wittywatz.github.io/MyPortfolio](https://wittywatz.github.io/MyPortfolio/).
 
-## Available Scripts
+Vite, React 19, TypeScript, Tailwind CSS v4, Framer Motion. Single scrolling
+page, dark by default with a light/dark toggle.
 
-In the project directory, you can run:
+## Commands
 
-### `npm start`
+```bash
+npm install
+npm run dev        # local dev server
+npm run typecheck  # tsc --noEmit
+npm run build      # typecheck, then build to dist/
+npm run preview    # serve dist/ at the deployed base path
+npm run deploy     # build, then publish dist/ to the gh-pages branch
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`npm run preview` serves at `/MyPortfolio/`, matching production. The bare root
+will be blank; open the URL the command prints.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Editing content
 
-### `npm test`
+All copy lives in `src/content/` as typed modules. Components read from them and
+hold no content of their own, with one exception: the three About paragraphs in
+`src/components/About.tsx` are prose rather than structured data.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| File | Holds |
+| --- | --- |
+| `profile.ts` | Name, headline, lede, links, availability, capability cards |
+| `experience.ts` | Detailed roles and the shorter "Previously" list |
+| `projects.ts` | Projects, their screenshots, and stack tags |
+| `skills.ts` | Stack section, grouped by category |
+| `education.ts` | Degrees and awards |
 
-### `npm run build`
+Adding a screenshot to a project: drop the file in `public/projects/`, then add
+an entry to that project's `media` array with an `alt` describing what the shot
+actually shows. Set `mediaLayout` to `wide` for desktop captures, which stack
+across the full card, or `phones` for tall mobile captures, which sit side by
+side.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Conventions worth knowing before editing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Colors are CSS custom properties in `src/styles/theme.css`.** The raw tokens
+  are deliberately not named `--color-*`; a `@theme inline` block maps them onto
+  Tailwind's `--color-*` names. Renaming them would make that mapping
+  self-referential and every color would resolve to nothing.
+- **`Section.tsx` owns section chrome** (anchor id, eyebrow, heading, spacing).
+  Use it rather than rebuilding the wrapper.
+- **`Reveal.tsx` is the only place scroll motion is defined**, and therefore the
+  only place `prefers-reduced-motion` needs honouring.
+- **`index.html` carries an inline script** that applies the stored theme before
+  first paint. Removing it reintroduces a flash of the wrong theme on load.
+- `vite.config.ts` sets `base: '/MyPortfolio/'`. Absolute asset references must
+  go through `import.meta.env.BASE_URL`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Design and planning notes
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+`docs/superpowers/specs/` and `docs/superpowers/plans/` record what was built
+and why, including which content was deliberately left off the site.

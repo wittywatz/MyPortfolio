@@ -13,7 +13,6 @@
 :root,
 [data-theme='dark'] {
   --bg: #08090c;
-  --elev: #0d0f14;
   --surface: rgba(255, 255, 255, 0.04);
   --line: rgba(255, 255, 255, 0.09);
   --text: #e8eaf0;
@@ -33,7 +32,6 @@
 
 [data-theme='light'] {
   --bg: #fbfaf8;
-  --elev: #ffffff;
   --surface: rgba(15, 20, 40, 0.03);
   --line: rgba(15, 20, 40, 0.12);
   --text: #14161c;
@@ -50,7 +48,6 @@
 
 @theme inline {
   --color-bg: var(--bg);
-  --color-elev: var(--elev);
   --color-surface: var(--surface);
   --color-border: var(--line);
   --color-text: var(--text);

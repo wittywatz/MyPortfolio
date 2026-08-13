@@ -62,10 +62,9 @@ function Shots({ project }: { project: Project }) {
 
 type Props = {
   project: Project;
-  index: number;
 };
 
-export default function ProjectCard({ project, index }: Props) {
+export default function ProjectCard({ project }: Props) {
   const cardClasses = 'rounded-2xl border border-border bg-surface p-6 md:p-8';
 
   // Screenshots are unreadable squeezed into a half-width column, so cards with
@@ -83,17 +82,12 @@ export default function ProjectCard({ project, index }: Props) {
   }
 
   if (project.diagram === 'voice') {
-    const flipped = index % 2 === 1;
     return (
       <article className={`grid items-center gap-8 md:grid-cols-2 ${cardClasses}`}>
-        <div className={flipped ? 'md:order-2' : ''}>
+        <div className="md:order-2">
           <Body project={project} />
         </div>
-        <div
-          className={`min-h-[240px] overflow-hidden rounded-xl border border-border bg-bg p-4 ${
-            flipped ? 'md:order-1' : ''
-          }`}
-        >
+        <div className="min-h-[240px] overflow-hidden rounded-xl border border-border bg-bg p-4 md:order-1">
           <VoiceArchitectureDiagram />
         </div>
       </article>

@@ -5,8 +5,8 @@ import { useScrolled } from '../hooks/useScrolled';
 import ThemeToggle from './ThemeToggle';
 
 const LINKS = [
-  { href: '#work', label: 'Work' },
   { href: '#experience', label: 'Experience' },
+  { href: '#work', label: 'Work' },
   { href: '#stack', label: 'Stack' },
   { href: '#about', label: 'About' },
 ];
@@ -80,6 +80,7 @@ export default function Nav() {
             onClick={() => setOpen((v) => !v)}
             aria-label={open ? 'Close menu' : 'Open menu'}
             aria-expanded={open}
+            aria-controls="mobile-menu"
             className="grid h-9 w-9 place-items-center rounded-lg border border-border bg-surface text-muted md:hidden"
           >
             {open ? <X size={16} /> : <Menu size={16} />}
@@ -88,29 +89,31 @@ export default function Nav() {
       </nav>
 
       {open && (
-        <ul className="border-t border-border bg-bg px-6 py-4 md:hidden">
-          {LINKS.map((link) => (
-            <li key={link.href}>
+        <nav aria-label="Primary, mobile">
+          <ul id="mobile-menu" className="border-t border-border bg-bg px-6 py-4 md:hidden">
+            {LINKS.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className="block py-2 text-sm text-muted transition-colors hover:text-text"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+            <li>
               <a
-                href={link.href}
-                onClick={() => setOpen(false)}
+                href={profile.resume}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block py-2 text-sm text-muted transition-colors hover:text-text"
               >
-                {link.label}
+                Résumé
               </a>
             </li>
-          ))}
-          <li>
-            <a
-              href={profile.resume}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block py-2 text-sm text-muted transition-colors hover:text-text"
-            >
-              Résumé
-            </a>
-          </li>
-        </ul>
+          </ul>
+        </nav>
       )}
     </header>
   );

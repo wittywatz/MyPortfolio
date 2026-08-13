@@ -25,7 +25,7 @@ export const capabilities: Capability[] = [
   {
     label: 'LLM products',
     title: 'RAG and agents in production',
-    body: 'LangGraph and LangChain systems with vector search, tool calling, and evals, tuned against real query patterns rather than demos.',
+    body: 'LangGraph and LangChain systems with vector search and tool calling, tuned against real query patterns rather than demos.',
   },
   {
     label: 'Data platforms',
@@ -35,6 +35,6 @@ export const capabilities: Capability[] = [
   {
     label: 'Cloud and infrastructure',
     title: 'Event-driven on AWS',
-    body: 'Lambda, SQS, CloudFront and Route 53 with Terraform, ArgoCD, and GitHub Actions standardising deployment across services.',
+    body: 'CloudFront and Route 53 edge routing with Terraform, ArgoCD, and GitHub Actions standardising deployment across services.',
   },
 ];

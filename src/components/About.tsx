@@ -41,21 +41,27 @@ export default function About() {
                 comfortable close to the metal and equally comfortable in front of a client.
               </p>
             </div>
-
-            <div className="mt-8 space-y-3 border-t border-border pt-6">
-              {degrees.map((degree) => (
-                <div key={degree.qualification}>
-                  <p className="text-sm text-text">{degree.qualification}</p>
-                  <p className="text-sm text-faint">
-                    {degree.institution} · {degree.dates}
-                  </p>
-                </div>
-              ))}
-              <p className="pt-1 text-sm text-faint">{awards.join(' · ')}</p>
-            </div>
           </div>
         </Reveal>
       </div>
+
+      {/* Education sits below both columns rather than trailing the prose. Kept
+          inside the text column it hung off one side with the space beside the
+          photo left empty, which read as an accident. Spanning the full width
+          makes it a deliberate footer to the section. */}
+      <Reveal className="mt-12 border-t border-border pt-8">
+        <div className="grid gap-6 sm:grid-cols-2">
+          {degrees.map((degree) => (
+            <div key={degree.qualification}>
+              <p className="text-sm text-text">{degree.qualification}</p>
+              <p className="text-sm text-faint">
+                {degree.institution} · {degree.dates}
+              </p>
+            </div>
+          ))}
+        </div>
+        <p className="mt-6 text-sm text-faint">{awards.join(' · ')}</p>
+      </Reveal>
     </Section>
   );
 }
