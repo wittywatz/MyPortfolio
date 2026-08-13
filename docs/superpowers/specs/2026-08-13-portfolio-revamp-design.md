@@ -130,7 +130,7 @@ Below them, a **Previously** strip. Each entry is company, role, **date range**,
 - *Software Developer, Neo Financial* — Jun 2021 – Aug 2021
 - *Data Scientist (M.Eng Research), University of Waterloo* — Sept 2019 – Dec 2020
 
-The site's role list mirrors the résumé exactly. **ThinkLP is not shown**, matching the résumé's own omission. This keeps the site and the PDF telling an identical, gapless, non-overlapping story — which is what a reader comparing the two is checking for. Filament AI, Finklassic, University of Ilorin, and Alcon appear in the LinkedIn export but not the résumé, and so are not shown either.
+The site's role list mirrors the résumé exactly. **ThinkLP is not shown** — the résumé omits it, and as of 2026-08-13 Watson removed it from LinkedIn as well, so all three surfaces now agree. This keeps the site and the PDF telling an identical, gapless, non-overlapping story, which is what a reader comparing the two is checking for. Filament AI, Finklassic, University of Ilorin, and Alcon appear only in the older LinkedIn export and are not shown either.
 
 **Stack** — six categories rendered as tag groups, taken verbatim from the résumé: Languages, AI, Backend, Frontend, Data, Infra.
 
