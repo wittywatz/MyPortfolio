@@ -11,27 +11,34 @@ const LINKS = [
   { href: '#about', label: 'About' },
 ];
 
+/** Tailwind's `md`. Must match the `md:` classes that hide the mobile menu. */
+const MD_BREAKPOINT = 768;
+
 export default function Nav() {
   const scrolled = useScrolled();
   const [open, setOpen] = useState(false);
 
+  // Above `md` both the menu and its close button are hidden by CSS, so an
+  // open menu would be stranded: no way to dismiss it, and it reappears
+  // already open on the way back down. Close it whenever the viewport reaches
+  // that width.
+  //
+  // Not verifiable in this project's browser tooling: its viewport emulation
+  // changes innerWidth without dispatching resize or MediaQueryList change
+  // events, so no listener of any kind fires. Confirmed by measurement, not
+  // assumed. Needs a manual check by dragging a real browser window.
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(min-width: 768px)');
+    const query = window.matchMedia(`(min-width: ${MD_BREAKPOINT}px)`);
 
-    // Close menu if already matches on mount
-    if (mediaQuery.matches) {
-      setOpen(false);
-    }
-
-    // Subscribe to changes
-    const handleChange = (e: MediaQueryListEvent) => {
-      if (e.matches) {
+    const closeAboveBreakpoint = (event: MediaQueryList | MediaQueryListEvent) => {
+      if (event.matches) {
         setOpen(false);
       }
     };
 
-    mediaQuery.addEventListener('change', handleChange);
-    return () => mediaQuery.removeEventListener('change', handleChange);
+    closeAboveBreakpoint(query);
+    query.addEventListener('change', closeAboveBreakpoint);
+    return () => query.removeEventListener('change', closeAboveBreakpoint);
   }, []);
 
   return (

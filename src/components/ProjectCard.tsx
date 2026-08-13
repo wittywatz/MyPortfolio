@@ -38,7 +38,9 @@ function Shots({ project }: { project: Project }) {
       className={
         wide
           ? 'mt-8 grid gap-4'
-          : 'mt-8 grid grid-cols-2 gap-4 sm:max-w-md md:max-w-lg lg:max-w-xl'
+          : // One per row on small screens: side by side there leaves each phone
+            // capture around 130px wide, at which nothing in it is readable.
+            'mt-8 grid gap-4 sm:grid-cols-2 sm:max-w-md md:max-w-lg lg:max-w-xl'
       }
     >
       {project.media.map((shot) => (
