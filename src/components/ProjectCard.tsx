@@ -13,19 +13,7 @@ function Media({ project }: { project: Project }) {
     );
   }
 
-  if (project.diagram === 'voice') {
-    return <VoiceArchitectureDiagram />;
-  }
-
-  return (
-    <div className="flex h-full flex-col justify-center gap-2 px-2">
-      {project.stack.map((tech) => (
-        <p key={tech} className="font-mono text-sm text-faint">
-          {tech}
-        </p>
-      ))}
-    </div>
-  );
+  return <VoiceArchitectureDiagram />;
 }
 
 type Props = {
@@ -34,17 +22,25 @@ type Props = {
 };
 
 export default function ProjectCard({ project, index }: Props) {
+  // A card only splits into two columns when it has something worth showing.
+  // With no asset and no diagram it runs full width, rather than padding the
+  // layout with a panel that repeats the stack tags printed just below it.
+  const hasVisual = Boolean(project.media) || project.diagram !== null;
   const flipped = index % 2 === 1;
 
   return (
-    <article className="grid items-center gap-8 rounded-2xl border border-border bg-surface p-6 md:grid-cols-2 md:p-8">
-      <div className={flipped ? 'md:order-2' : ''}>
+    <article
+      className={`grid gap-8 rounded-2xl border border-border bg-surface p-6 md:p-8 ${
+        hasVisual ? 'items-center md:grid-cols-2' : ''
+      }`}
+    >
+      <div className={hasVisual && flipped ? 'md:order-2' : ''}>
         <h3 className="text-xl font-semibold tracking-tight md:text-2xl">{project.name}</h3>
-        <p className="mt-3 leading-relaxed text-muted">{project.summary}</p>
+        <p className="mt-3 max-w-[60ch] leading-relaxed text-muted">{project.summary}</p>
 
         <ul className="mt-5 space-y-2">
           {project.bullets.map((bullet) => (
-            <li key={bullet} className="flex gap-3 text-sm leading-relaxed text-muted">
+            <li key={bullet} className="flex max-w-[70ch] gap-3 text-sm leading-relaxed text-muted">
               <span aria-hidden="true" className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent" />
               {bullet}
             </li>
@@ -63,13 +59,15 @@ export default function ProjectCard({ project, index }: Props) {
         </ul>
       </div>
 
-      <div
-        className={`min-h-[240px] overflow-hidden rounded-xl border border-border bg-bg p-4 ${
-          flipped ? 'md:order-1' : ''
-        }`}
-      >
-        <Media project={project} />
-      </div>
+      {hasVisual && (
+        <div
+          className={`min-h-[240px] overflow-hidden rounded-xl border border-border bg-bg p-4 ${
+            flipped ? 'md:order-1' : ''
+          }`}
+        >
+          <Media project={project} />
+        </div>
+      )}
     </article>
   );
 }
