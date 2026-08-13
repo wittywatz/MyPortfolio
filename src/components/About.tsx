@@ -6,12 +6,15 @@ import Section from './Section';
 export default function About() {
   return (
     <Section id="about" eyebrow="About" title="A bit more context">
-      <div className="grid gap-10 md:grid-cols-[280px_1fr] md:gap-14">
-        <Reveal>
+      {/* items-start keeps the photo's top edge level with the first line of
+          prose. Without it the two columns stretch to equal height and the
+          photo, being much shorter than the text, floats out of alignment. */}
+      <div className="grid items-start gap-10 md:grid-cols-[280px_1fr] md:gap-14">
+        <Reveal className="w-full">
           <img
             src={profile.photo}
             alt={`Portrait of ${profile.name}`}
-            className="w-full rounded-2xl border border-border object-cover"
+            className="aspect-4/5 w-full rounded-2xl border border-border object-cover"
           />
         </Reveal>
 

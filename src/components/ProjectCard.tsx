@@ -30,6 +30,34 @@ function Body({ project }: { project: Project }) {
   );
 }
 
+function Shots({ project }: { project: Project }) {
+  const wide = project.mediaLayout === 'wide';
+
+  return (
+    <div
+      className={
+        wide
+          ? 'mt-8 grid gap-4'
+          : 'mt-8 grid grid-cols-2 gap-4 sm:max-w-md md:max-w-lg lg:max-w-xl'
+      }
+    >
+      {project.media.map((shot) => (
+        <figure
+          key={shot.file}
+          className="overflow-hidden rounded-xl border border-border bg-bg"
+        >
+          <img
+            src={`${import.meta.env.BASE_URL}projects/${shot.file}`}
+            alt={shot.alt}
+            loading="lazy"
+            className="w-full"
+          />
+        </figure>
+      ))}
+    </div>
+  );
+}
+
 type Props = {
   project: Project;
   index: number;
@@ -38,22 +66,16 @@ type Props = {
 export default function ProjectCard({ project, index }: Props) {
   const cardClasses = 'rounded-2xl border border-border bg-surface p-6 md:p-8';
 
-  // A screenshot of an application interface is unreadable in a half-width
-  // column, so media cards stack: text first, then the image across the full
-  // card. The architecture diagram is drawn to be legible small, so it keeps
-  // the side-by-side layout. Cards with neither simply run full width.
-  if (project.media) {
+  // Screenshots are unreadable squeezed into a half-width column, so cards with
+  // media stack: text first, then the shots below. Desktop captures run the full
+  // card width; tall phone captures sit side by side at a size that keeps their
+  // text legible. The architecture diagram is drawn to read small and keeps the
+  // side-by-side layout. Cards with neither simply run full width.
+  if (project.media.length > 0) {
     return (
       <article className={cardClasses}>
         <Body project={project} />
-        <figure className="mt-8 overflow-hidden rounded-xl border border-border bg-bg">
-          <img
-            src={`${import.meta.env.BASE_URL}projects/${project.media}`}
-            alt={project.mediaAlt ?? `${project.name} interface`}
-            loading="lazy"
-            className="w-full"
-          />
-        </figure>
+        <Shots project={project} />
       </article>
     );
   }

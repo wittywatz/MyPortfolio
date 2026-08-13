@@ -4,12 +4,26 @@ export type Project = {
   summary: string;
   stack: string[];
   bullets: string[];
-  /** Filename inside public/projects/, or null when no asset exists yet. */
-  media: string | null;
-  /** Describes what the media actually shows. Required whenever media is set. */
-  mediaAlt: string | null;
+  /**
+   * Screenshots from public/projects/. Empty when no asset exists yet.
+   * Curated rather than exhaustive: each shot should evidence a bullet above.
+   */
+  media: MediaShot[];
+  /**
+   * How the shots are laid out. 'wide' stacks desktop captures across the full
+   * card; 'phones' sets tall mobile captures side by side at a readable size.
+   * Null when there is no media.
+   */
+  mediaLayout: 'wide' | 'phones' | null;
   /** Renders the hand-built architecture diagram in place of media. */
   diagram: 'voice' | null;
+};
+
+export type MediaShot = {
+  /** Filename inside public/projects/. */
+  file: string;
+  /** What the shot actually shows, for readers who cannot see it. */
+  alt: string;
 };
 
 export const projects: Project[] = [
@@ -24,9 +38,17 @@ export const projects: Project[] = [
       'Semantic business-term layer, natural-language alerts, and automated anomaly and root-cause analysis.',
       'Usage-based Stripe billing, with Celery and Redis running scheduled and long-running jobs.',
     ],
-    media: 'nl-bi-platform.jpg',
-    mediaAlt:
-      'The platform answering a plain-English question about revenue by product category: a bar chart with the generated SQL available beneath it, a banner flagging an inferred meaning for an ambiguous term, and the connected Postgres schema listed alongside.',
+    media: [
+      {
+        file: 'bi-01-ask.jpg',
+        alt: 'Answering a plain-English question about revenue by product category: a bar chart with the generated SQL available beneath it, a banner flagging an inferred meaning for an ambiguous term, and the connected Postgres schema listed alongside.',
+      },
+      {
+        file: 'bi-02-dashboard.jpg',
+        alt: 'A saved dashboard titled Sales Revenue Performance Overview, with four widgets covering monthly revenue, revenue by region, revenue by product category, and revenue by order status.',
+      },
+    ],
+    mediaLayout: 'wide',
     diagram: null,
   },
   {
@@ -40,8 +62,8 @@ export const projects: Project[] = [
       'Native shells on both platforms: a Swift menu-bar app on macOS and a Kotlin input method on Android.',
       'No audio leaves the machine at runtime.',
     ],
-    media: null,
-    mediaAlt: null,
+    media: [],
+    mediaLayout: null,
     diagram: 'voice',
   },
   {
@@ -55,8 +77,17 @@ export const projects: Project[] = [
       'Every model output validated against program invariants before it can modify a plan.',
       'Full offline capability with local SQLite and Supabase sync.',
     ],
-    media: null,
-    mediaAlt: null,
+    media: [
+      {
+        file: 'forge-01-program.jpg',
+        alt: 'A generated training day listing six exercises with their set and rep targets, above a mesocycle card showing week two of four and eleven sessions left.',
+      },
+      {
+        file: 'forge-02-workout.jpg',
+        alt: 'Logging a live workout: the set grid for barbell back squat with a rest timer running, and a prompt reading that every working set hit ten reps so it is time to add weight.',
+      },
+    ],
+    mediaLayout: 'phones',
     diagram: null,
   },
 ];
