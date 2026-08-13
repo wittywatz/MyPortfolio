@@ -1,24 +1,19 @@
 import { FileText, Github, Linkedin, Mail } from 'lucide-react';
 import { profile } from '../content/profile';
 import Reveal from './Reveal';
-
-const ICON = { Mail, Linkedin, Github, FileText };
+import Section from './Section';
 
 export default function Contact() {
   const links = [
-    { icon: ICON.Mail, label: 'Email', href: `mailto:${profile.email}`, external: false },
-    { icon: ICON.Linkedin, label: 'LinkedIn', href: profile.linkedin, external: true },
-    { icon: ICON.Github, label: 'GitHub', href: profile.github, external: true },
-    { icon: ICON.FileText, label: 'Résumé', href: profile.resume, external: true },
+    { icon: Mail, label: 'Email', href: `mailto:${profile.email}`, external: false },
+    { icon: Linkedin, label: 'LinkedIn', href: profile.linkedin, external: true },
+    { icon: Github, label: 'GitHub', href: profile.github, external: true },
+    { icon: FileText, label: 'Résumé', href: profile.resume, external: true },
   ];
 
   return (
-    <section id="contact" className="mx-auto w-full max-w-5xl px-6 py-24 md:py-32">
+    <Section id="contact" eyebrow="Contact" title="Get in touch">
       <Reveal>
-        <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-accent">Contact</p>
-        <h2 className="mb-4 text-3xl font-semibold tracking-tight md:text-4xl">
-          Let us talk
-        </h2>
         <p className="mb-9 max-w-[52ch] leading-relaxed text-muted">
           {profile.availability}, currently based in {profile.location}. The fastest way to reach
           me is email.
@@ -37,6 +32,6 @@ export default function Contact() {
           ))}
         </div>
       </Reveal>
-    </section>
+    </Section>
   );
 }
