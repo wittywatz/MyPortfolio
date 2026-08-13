@@ -1,4 +1,12 @@
-@import 'tailwindcss';
+@import 'tailwindcss' source(none);
+
+/* Auto-detection scans far past the app: it was generating utilities from
+   dependency internals and from the design docs, which quote every component's
+   markup. That put 692 rules in the bundle, including junk like
+   `[vite:react-babel]`. Declaring the sources explicitly keeps the CSS to
+   classes this site actually uses. */
+@source '../../index.html';
+@source '../**/*.{ts,tsx}';
 
 /*
   Palette variables are deliberately NOT named --color-*. The `@theme inline`
