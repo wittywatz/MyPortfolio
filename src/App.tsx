@@ -1,10 +1,18 @@
-import ThemeToggle from './components/ThemeToggle';
+import Nav from './components/Nav';
+import Section from './components/Section';
 
 export default function App() {
   return (
-    <main className="min-h-screen bg-bg text-text font-sans grid place-items-center gap-6">
-      <h1 className="text-4xl font-semibold tracking-tight">Scaffold online</h1>
-      <ThemeToggle />
-    </main>
+    <div id="top" className="min-h-screen bg-bg font-sans text-text">
+      <Nav />
+      <main className="pt-16">
+        <Section id="work" eyebrow="Selected work" title="Things I have built">
+          <p className="text-muted">Placeholder — replaced in Task 6.</p>
+        </Section>
+        <Section id="experience" eyebrow="Experience" title="Where I have worked">
+          <p className="text-muted">Placeholder — replaced in Task 7.</p>
+        </Section>
+      </main>
+    </div>
   );
 }
