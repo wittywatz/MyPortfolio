@@ -43,10 +43,6 @@ export const projects: Project[] = [
         file: 'bi-01-ask.jpg',
         alt: 'Answering a plain-English question about revenue by product category: a bar chart with the generated SQL available beneath it, a banner flagging an inferred meaning for an ambiguous term, and the connected Postgres schema listed alongside.',
       },
-      {
-        file: 'bi-02-dashboard.jpg',
-        alt: 'A saved dashboard titled Sales Revenue Performance Overview, with four widgets covering monthly revenue, revenue by region, revenue by product category, and revenue by order status.',
-      },
     ],
     mediaLayout: 'wide',
     diagram: null,
@@ -78,10 +74,6 @@ export const projects: Project[] = [
       'Full offline capability with local SQLite and Supabase sync.',
     ],
     media: [
-      {
-        file: 'forge-01-program.jpg',
-        alt: 'A generated training day listing six exercises with their set and rep targets, above a mesocycle card showing week two of four and eleven sessions left.',
-      },
       {
         file: 'forge-02-workout.jpg',
         alt: 'Logging a live workout: the set grid for barbell back squat with a rest timer running, and a prompt reading that every working set hit ten reps so it is time to add weight.',
