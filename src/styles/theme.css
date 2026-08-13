@@ -20,6 +20,12 @@
   --muted: #98a0b4;
   --faint: #7d859a;
   --accent: #6d8bff;
+  /* Darker than --accent: white text on --accent only reaches 3.09:1 (fails
+     WCAG AA 4.5:1 for normal text). Used solely for solid button fills that
+     carry white text; --accent itself stays untouched since it also serves
+     as a text/icon colour and a focus-ring colour, whose contrast needs are
+     already met. */
+  --accent-solid: #5068e0;
   --accent-2: #31d0aa;
   --glow-1: rgba(88, 120, 255, 0.28);
   --glow-2: rgba(0, 220, 190, 0.14);
@@ -34,6 +40,9 @@
   --muted: #4d5464;
   --faint: #656c7c;
   --accent: #3552d9;
+  /* Already passes 4.5:1 with white text in light mode; kept equal to
+     --accent so only the dark theme's button fill needs a distinct value. */
+  --accent-solid: #3552d9;
   --accent-2: #0f7a63;
   --glow-1: rgba(80, 110, 255, 0.14);
   --glow-2: rgba(0, 180, 150, 0.1);
@@ -48,6 +57,7 @@
   --color-muted: var(--muted);
   --color-faint: var(--faint);
   --color-accent: var(--accent);
+  --color-accent-solid: var(--accent-solid);
   --color-accent-2: var(--accent-2);
   --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
