@@ -1,6 +1,7 @@
 import Nav from './components/Nav';
 import Hero from './components/Hero';
 import Capabilities from './components/Capabilities';
+import Work from './components/Work';
 import Section from './components/Section';
 
 export default function App() {
@@ -10,9 +11,7 @@ export default function App() {
       <main>
         <Hero />
         <Capabilities />
-        <Section id="work" eyebrow="Selected work" title="Things I have built">
-          <p className="text-muted">Placeholder, replaced in Task 6.</p>
-        </Section>
+        <Work />
         <Section id="experience" eyebrow="Experience" title="Where I have worked">
           <p className="text-muted">Placeholder, replaced in Task 7.</p>
         </Section>
