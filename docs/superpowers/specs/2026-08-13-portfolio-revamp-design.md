@@ -23,6 +23,7 @@ These were settled during brainstorming and are not open in planning:
 | Visual direction | "Dark technical / product-grade" — near-black, soft gradient glow, tight sans type, capability cards |
 | Theme | Light/dark toggle; **dark by default**; choice persisted |
 | Experience depth | LipDub AI and Arctic AI detailed; everything else in a compact "Previously" strip |
+| Role list | Mirrors the résumé exactly — ThinkLP is not shown; every role displays its dates |
 | Availability | Hero shows an "Open to new opportunities" status pill |
 | Projects | The three résumé projects only |
 | Voice Dictation visual | Hand-built SVG architecture diagram |
@@ -100,7 +101,13 @@ Every one of these is disabled when `prefers-reduced-motion: reduce` is set. No 
 
 **Hero** — status pill reading "Open to new opportunities" with a pulsing indicator; gradient-clipped headline; a two-line lede covering 8+ years across SaaS, media, and fintech; primary CTA to Work and secondary to the résumé. Background is a radial glow over a faint grid.
 
-**Capabilities** — three cards immediately below the hero: multi-tenant data platforms, production AI/RAG systems, and cloud infrastructure. Each is a label, a title, and one sentence.
+**Capabilities** — three cards immediately below the hero, each a label, a title, and one sentence. Every claim must be backed by a role or project shown elsewhere on the page:
+
+1. *LLM products* — production RAG and agentic systems: LangGraph, LangChain, vector search, evals. Backed by LipDub AI and Arctic AI.
+2. *Data platforms* — enterprise pipelines on Azure Databricks, Data Factory, and Data Lake, consolidating multi-source ingestion. Backed by Arctic AI.
+3. *Cloud and infrastructure* — AWS and event-driven services, Terraform, ArgoCD, CI/CD. Backed by LipDub AI and Neo Financial.
+
+Note the second card is deliberately worded around the Arctic AI Azure platform rather than dbt/Snowflake/Airbyte, since the role that work belongs to is not shown on the site.
 
 **Selected Work** — three large cards in alternating layout. Each card carries name, one-line summary, stack tags, two to three outcome bullets, and a media slot.
 
@@ -117,7 +124,13 @@ Projects:
 - *Senior Software Engineer, LipDub AI (MARZ)* — Sept 2024 – Aug 2026
 - *Senior Software Developer, Arctic AI* — Feb 2022 – Sept 2024
 
-Below them, a **Previously** strip. Each entry is company, role, and one line of context, **with no date ranges** — the roles genuinely overlap in time and the résumé PDF carries the authoritative dates. Entries: ThinkLP (multi-tenant data platform on dbt, Snowflake, Airbyte; row-level security and event-driven alerting), Divergence Neuro, Neo Financial, Filament AI, University of Waterloo (M.Eng research).
+Below them, a **Previously** strip. Each entry is company, role, **date range**, and one line of context:
+
+- *Web Application Developer, Divergence Neuro* — Aug 2021 – Oct 2021
+- *Software Developer, Neo Financial* — Jun 2021 – Aug 2021
+- *Data Scientist (M.Eng Research), University of Waterloo* — Sept 2019 – Dec 2020
+
+The site's role list mirrors the résumé exactly. **ThinkLP is not shown**, matching the résumé's own omission. This keeps the site and the PDF telling an identical, gapless, non-overlapping story — which is what a reader comparing the two is checking for. Filament AI, Finklassic, University of Ilorin, and Alcon appear in the LinkedIn export but not the résumé, and so are not shown either.
 
 **Stack** — six categories rendered as tag groups, taken verbatim from the résumé: Languages, AI, Backend, Frontend, Data, Infra.
 
