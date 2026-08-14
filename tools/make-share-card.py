@@ -118,7 +118,7 @@ def main(out_path):
     # tail until the row clears it rather than letting the two collide.
     tf = font(MONO, 17, "Regular")
     uf_probe = font(MONO, 19, "Medium")
-    url = "wittywatz.github.io/MyPortfolio"
+    url = "watsonagbramu.com"
     url_w = d.textlength(url, font=uf_probe) / SCALE
     limit = W - M - url_w - 48
 

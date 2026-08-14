@@ -123,7 +123,7 @@ def main(out_path):
     )
 
     uf = font(MONO, 21, "Medium")
-    url = "wittywatz.github.io/MyPortfolio"
+    url = "watsonagbramu.com"
     uw = d.textlength(url, font=uf) / SCALE
     d.text(((RIGHT_SAFE - uw) * SCALE, fy * SCALE), url, font=uf, fill=SHIRT, anchor="lm")
 

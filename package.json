@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "private": true,
   "type": "module",
-  "homepage": "https://wittywatz.github.io/MyPortfolio",
+  "homepage": "https://watsonagbramu.com",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
