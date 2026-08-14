@@ -17,7 +17,7 @@ export const detailedRoles: DetailedRole[] = [
   {
     company: 'LipDub AI (MARZ)',
     role: 'Senior Software Engineer',
-    dates: 'Sept 2024 – Aug 2026',
+    dates: 'Sept 2024 – Present',
     location: 'Remote',
     bullets: [
       'Initiated and designed the personalization epic, delivering the API in production today that regenerates voice and lip-sync for edited text segments, eliminating full-asset re-renders on client revisions.',
