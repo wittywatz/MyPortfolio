@@ -1,4 +1,4 @@
-import { detailedRoles, previousRoles } from '../content/experience';
+import { detailedRoles } from '../content/experience';
 import Reveal from './Reveal';
 import Section from './Section';
 
@@ -28,23 +28,6 @@ export default function Experience() {
           </Reveal>
         ))}
       </div>
-
-      <Reveal className="mt-16">
-        <h3 className="mb-6 font-mono text-xs uppercase tracking-[0.2em] text-faint">Previously</h3>
-        <ul className="space-y-5">
-          {previousRoles.map((role) => (
-            <li key={role.company} className="border-l border-border pl-6">
-              <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-                <p className="text-sm font-semibold">
-                  {role.role} <span className="font-normal text-accent">· {role.company}</span>
-                </p>
-                <p className="font-mono text-xs text-faint">{role.dates}</p>
-              </div>
-              <p className="mt-1 text-sm leading-relaxed text-muted">{role.summary}</p>
-            </li>
-          ))}
-        </ul>
-      </Reveal>
     </Section>
   );
 }
