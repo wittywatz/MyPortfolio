@@ -6,6 +6,13 @@ export type DetailedRole = {
   bullets: string[];
 };
 
+export type PreviousRole = {
+  company: string;
+  role: string;
+  dates: string;
+  summary: string;
+};
+
 export const detailedRoles: DetailedRole[] = [
   {
     company: 'LipDub AI (MARZ)',
@@ -33,5 +40,22 @@ export const detailedRoles: DetailedRole[] = [
       'Led a full platform redesign in Next.js and implemented CI/CD with GitHub Actions and Docker, standardizing deployments across services.',
       'Mentored engineers and contributed to system design and technical direction across projects.',
     ],
+  },
+];
+
+export const previousRoles: PreviousRole[] = [
+  {
+    company: 'Neo Financial',
+    role: 'Software Developer',
+    dates: 'Jun 2021 – Aug 2021',
+    summary:
+      'Credit statement generation on Node, React, Terraform and GraphQL, and the decider microservice routing declined transactions to third-party fraud detection.',
+  },
+  {
+    company: 'University of Waterloo',
+    role: 'Data Scientist (M.Eng Research)',
+    dates: 'Sept 2019 – Dec 2020',
+    summary:
+      'Transfer-learning image classification reaching 92.18% across 120 classes, and Faster R-CNN pedestrian detection on re-annotated datasets.',
   },
 ];

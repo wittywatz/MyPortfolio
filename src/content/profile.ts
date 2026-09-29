@@ -3,11 +3,11 @@ import resumePdf from '../assets/Resume.pdf';
 
 export const profile = {
   name: 'Watson Agbramu',
-  title: 'Senior Full Stack Developer',
+  title: 'Senior Software Engineer',
   location: 'Ontario, Canada',
   availability: 'Open to new opportunities',
   headline: 'Data platforms and AI systems, built to scale.',
-  lede: 'Software Engineer building production systems across SaaS, media, and fintech, spanning client-facing APIs and interfaces, data pipelines, and cloud infrastructure. Recent work covers LLM-powered products, multi-tenant platforms, and event-driven architecture.',
+  lede: 'Senior Software Engineer with 6+ years building production systems across SaaS, media, and fintech, spanning client-facing APIs and interfaces, data pipelines, and cloud infrastructure. Recent work covers LLM-powered products, multi-tenant platforms, and event-driven architecture.',
   photo: profilePhoto,
   resume: resumePdf,
   email: 'watsonagbramu@gmail.com',
